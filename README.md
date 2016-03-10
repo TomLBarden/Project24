@@ -9,4 +9,4 @@ Group Mongrel - Lord Exton the 3rd
 
 Resident Monkey - Chimpington Barden (Still a chimp)
 
-Offical Tech Support - Alex Billington
+Official Tech Support - Alex Billington
