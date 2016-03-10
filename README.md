@@ -14,3 +14,5 @@ Makeup Artist - Liam Cochrane
 Resident Monkey - Chimpington Barden (Still a chimp)
 
 Official Tech Support - Alex Billington
+
+The Idea Guy - Sam Williams
