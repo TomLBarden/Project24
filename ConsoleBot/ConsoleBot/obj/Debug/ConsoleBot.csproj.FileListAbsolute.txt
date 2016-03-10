@@ -4,3 +4,5 @@ C:\Users\Computing\Downloads\ConsoleBot2.5\ConsoleBot\ConsoleBot\bin\Debug\Conso
 C:\Users\Computing\Downloads\ConsoleBot2.5\ConsoleBot\ConsoleBot\bin\Debug\ConsoleBot.pdb
 C:\Users\Computing\Downloads\ConsoleBot2.5\ConsoleBot\ConsoleBot\bin\Debug\AIMLbot.pdb
 C:\Users\Computing\Downloads\ConsoleBot2.5\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Project24\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.exe
+C:\Users\Alex\Documents\GitHub\Project24\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.pdb

@@ -1,6 +1,6 @@
 ﻿namespace GossbitBot_Chatroom
 {
-    partial class Form1
+    partial class StartUpForm
     {
         /// <summary>
         /// Required designer variable.

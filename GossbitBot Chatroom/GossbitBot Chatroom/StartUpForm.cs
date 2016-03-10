@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using AIMLbot;
 
 namespace GossbitBot_Chatroom
 {
-    public partial class Form1 : Form
+    public partial class StartUpForm : Form
     {
-        public Form1()
+        public StartUpForm()
         {
             InitializeComponent();
         }
@@ -26,7 +20,7 @@ namespace GossbitBot_Chatroom
             {
                 Program.UserName = UserNameBox.Text;
 
-                Form2 Chatroom = new Form2();
+                ChatroomForm Chatroom = new ChatroomForm();
                 Chatroom.ShowDialog();
             }
 
