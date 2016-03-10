@@ -13,9 +13,11 @@ namespace GossbitBot_Chatroom
 
         private void ChatButton_Click(object sender, EventArgs e)
         {
+            //AB - Checks to ensure a name is entered. If not shows a message box.
             if (string.IsNullOrWhiteSpace(UserNameBox.Text))
                 MessageBox.Show("Please enter your name and try again.");
 
+            //AB - If name is valid then it stores the name in the string and launches form2.
             else
             {
                 Program.UserName = UserNameBox.Text;

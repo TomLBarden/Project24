@@ -11,26 +11,28 @@ namespace GossbitBot_Chatroom
             InitializeComponent();
 
             ConversationBox.Items.Add("Marvin: " + "Hi " + Program.UserName + " Nice to meet you. How are you?");
+
         }
 
         private void SendButton_Click(object sender, EventArgs e)
         {
-            //Deals with the users message being sent.
-            //Handles an empty message box.
+            //AB - Deals with the users message being sent.
+            //AB - Handles an empty message box.
             if (string.IsNullOrWhiteSpace(UserMessageBox.Text))
                 MessageBox.Show("Please enter a message to send.");
 
-            //Adds the data in the UserMessageBox to the ConversationBox.
+            //AB - Adds the data in the UserMessageBox to the ConversationBox.
             ConversationBox.Items.Add(Program.UserName + ": " + UserMessageBox.Text);
-            //Sets the UserMessageBox to being empty.
+
+            //AB - Takes user string and generates the response from the AIML knowledge base.
+            Request r = new Request(UserMessageBox.Text, Program.myUser, Program.myBot);
+            Result res = Program.myBot.Chat(r);
+
+            //AB - Adds back the response genereated by the bot back into the conversation window.
+            ConversationBox.Items.Add("Marvin: " + res.Output);
+
+            //AB - Sets the UserMessageBox to being empty.
             UserMessageBox.Text = null;
-
-
-            // -----    -----
-
-
-            //Deals with the chat rooms reply. 
-            ConversationBox.Items.Add("Marvin: Here is my generic response, I am only a basic AI please love me.");
         }
     }
 }

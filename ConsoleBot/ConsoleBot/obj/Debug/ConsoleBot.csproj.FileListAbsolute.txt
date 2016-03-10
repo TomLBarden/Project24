@@ -6,3 +6,5 @@ C:\Users\Computing\Downloads\ConsoleBot2.5\ConsoleBot\ConsoleBot\bin\Debug\AIMLb
 C:\Users\Computing\Downloads\ConsoleBot2.5\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\GitHub\Project24\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.exe
 C:\Users\Alex\Documents\GitHub\Project24\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.pdb
+C:\Users\Computing\Documents\GitHub\Project24\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.exe
+C:\Users\Computing\Documents\GitHub\Project24\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.pdb
