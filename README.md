@@ -7,4 +7,4 @@ Pyrotechnics - Dr. Thomas Smith
 
 Group Mongrel - Lord Exton the 3rd
 
-Resident Monkey - Chimpington Barden
+Resident Monkey - Chimpington Barden (Still a chimp)
