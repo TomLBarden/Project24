@@ -10,3 +10,7 @@ Group Mongrel - Lord Exton the 3rd
 Resident Monkey - Chimpington Barden
 
 Makeup Artist - Liam Cochrane
+
+Resident Monkey - Chimpington Barden (Still a chimp)
+
+Official Tech Support - Alex Billington

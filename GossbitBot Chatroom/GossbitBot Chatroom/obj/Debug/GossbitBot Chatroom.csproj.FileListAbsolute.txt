@@ -1,0 +1,10 @@
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe.config
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.pdb
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.Form1.resources
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.Properties.Resources.resources
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.Form2.resources
+C:\Users\Alex\Documents\Uni - Year 2\Semester 2\Group Project\Assessment\Item 2\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csprojResolveAssemblyReference.cache
