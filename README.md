@@ -6,3 +6,5 @@ Head Developer - Sir Adam Bowler
 Pyrotechnics - Dr. Thomas Smith
 
 Group Mongrel - Lord Exton the 3rd
+
+Resident Monkey - Chimpington Barden
