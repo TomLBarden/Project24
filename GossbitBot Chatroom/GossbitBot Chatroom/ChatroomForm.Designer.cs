@@ -49,6 +49,7 @@
             this.UserMessageBox.Size = new System.Drawing.Size(418, 41);
             this.UserMessageBox.TabIndex = 1;
             this.UserMessageBox.Text = "";
+            this.UserMessageBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserMessageBox_KeyDown);
             // 
             // SendButton
             // 
@@ -60,7 +61,7 @@
             this.SendButton.UseVisualStyleBackColor = true;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
-            // Form2
+            // ChatroomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -68,7 +69,7 @@
             this.Controls.Add(this.SendButton);
             this.Controls.Add(this.UserMessageBox);
             this.Controls.Add(this.ConversationBox);
-            this.Name = "Form2";
+            this.Name = "ChatroomForm";
             this.Text = "Form2";
             this.ResumeLayout(false);
 

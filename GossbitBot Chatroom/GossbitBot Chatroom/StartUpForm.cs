@@ -9,6 +9,18 @@ namespace GossbitBot_Chatroom
         public StartUpForm()
         {
             InitializeComponent();
+            UserNameBox.SelectionStart = UserNameBox.Text.Length;//AB & ABo - Cursor starts in message box
+            UserNameBox.Focus();
+        }
+
+        //AB & ABo - Enter button calls ChatButton click event
+        private void UserNameBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ChatButton.PerformClick();
+                e.Handled = true;
+            }
         }
 
         private void ChatButton_Click(object sender, EventArgs e)
@@ -23,7 +35,9 @@ namespace GossbitBot_Chatroom
                 Program.UserName = UserNameBox.Text;
 
                 ChatroomForm Chatroom = new ChatroomForm();
+                Hide();
                 Chatroom.ShowDialog();
+                Close();
             }
 
 

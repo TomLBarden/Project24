@@ -40,6 +40,7 @@
             this.UserNameBox.Size = new System.Drawing.Size(141, 23);
             this.UserNameBox.TabIndex = 0;
             this.UserNameBox.Text = "";
+            this.UserNameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserNameBox_KeyDown);
             // 
             // ChatButton
             // 
@@ -61,7 +62,7 @@
             this.label1.Text = "Welcome to the chatroom.\r\n\r\nWhen you are ready to chat with someone,\r\n\r\nPlease en" +
     "ter you name and press \"Chat Now\".\r\n";
             // 
-            // Form1
+            // StartUpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,7 +70,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ChatButton);
             this.Controls.Add(this.UserNameBox);
-            this.Name = "Form1";
+            this.Name = "StartUpForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
