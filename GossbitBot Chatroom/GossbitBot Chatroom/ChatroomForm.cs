@@ -47,9 +47,15 @@ namespace GossbitBot_Chatroom
                 //AB - Sets the UserMessageBox to being empty.
                 UserMessageBox.Text = null;
 
+                /* LE -ALLOW FOR READING TIME - Take string, measure length, calculate appropriate delay. */
                 //LE - Adds a delay with the Bot's response.
+                isReading();
                 var t = Task.Delay(1000); //1 second/1000 ms
                 t.Wait();
+
+                /* LE - 'isTyping' Function call - Take response, measure length, calculate appropriate time to display "User Is Typing" label. */
+                isTyping();
+
 
                 //AB - Adds back the response genereated by the bot back into the conversation window.
                 ConversationBox.Items.Add("Marvin: " + res.Output);
@@ -57,6 +63,18 @@ namespace GossbitBot_Chatroom
                
 
             }
+        }
+
+        //LE - Method template for Reading time.
+        private void isReading()
+        {
+
+        }
+
+        //LE - Method template for displaying "User Is Typing". 
+        private void isTyping()
+        {
+
         }
     }
 }
