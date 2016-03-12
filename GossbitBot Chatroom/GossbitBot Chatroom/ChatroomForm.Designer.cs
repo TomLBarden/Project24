@@ -39,7 +39,7 @@
             this.ConversationBox.FormattingEnabled = true;
             this.ConversationBox.Location = new System.Drawing.Point(12, 12);
             this.ConversationBox.Name = "ConversationBox";
-            this.ConversationBox.Size = new System.Drawing.Size(489, 342);
+            this.ConversationBox.Size = new System.Drawing.Size(489, 303);
             this.ConversationBox.TabIndex = 0;
             // 
             // UserMessageBox
@@ -83,17 +83,16 @@
             this.Controls.Add(this.UserMessageBox);
             this.Controls.Add(this.ConversationBox);
             this.Name = "ChatroomForm";
-            this.Text = "Form2";
+            this.Text = "Chat";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox ConversationBox;
         private System.Windows.Forms.RichTextBox UserMessageBox;
         private System.Windows.Forms.Button SendButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox ConversationBox;
     }
 }

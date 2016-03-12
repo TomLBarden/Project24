@@ -9,11 +9,13 @@ namespace GossbitBot_Chatroom
         public StartUpForm()
         {
             InitializeComponent();
-            UserNameBox.SelectionStart = UserNameBox.Text.Length;//AB & ABo - Cursor starts in message box
+
+            //AB & ABo - Cursor starts in the text box when the form is launched.
+            UserNameBox.SelectionStart = UserNameBox.Text.Length;
             UserNameBox.Focus();
         }
 
-        //AB & ABo - Enter button calls ChatButton click event
+        //AB & ABo - Pressing the enter key has same affect as pressing the send button.
         private void UserNameBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

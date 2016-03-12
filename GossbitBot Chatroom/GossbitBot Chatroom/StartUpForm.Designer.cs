@@ -71,7 +71,7 @@
             this.Controls.Add(this.ChatButton);
             this.Controls.Add(this.UserNameBox);
             this.Name = "StartUpForm";
-            this.Text = "Form1";
+            this.Text = "Chatroom";
             this.ResumeLayout(false);
             this.PerformLayout();
 

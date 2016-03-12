@@ -8,6 +8,9 @@ namespace GossbitBot_Chatroom
     {
         //AB - A string to store the users inputted name.
         public static string UserName;
+        
+
+        //AB - Creates objects used by in AIML.
         public static Bot myBot;
         public static User myUser;
 
