@@ -35,14 +35,65 @@ namespace GossbitBot_Chatroom
             ConversationBox.Items.Add("Marvin: " + res.Output);
         }
 
-        //AB & ABo - Pressing the enter key has same affect as pressing the send button.
+        //AB & ABo - Event that occurs when the user tpyes in the UserMessageBox.
         private void UserMessageBox_KeyDown(object sender, KeyEventArgs e)
         {
+            //AB - Boolean flag that indicates if the key pressed was a character of a digit. 
+            bool isCharOrDigit = char.IsLetterOrDigit((char)e.KeyCode);
+
+            //AB & ABo - Pressing the enter key has same affect as pressing the send button.
             if (e.KeyCode == Keys.Enter)
             {
                 SendButton.PerformClick();
                 e.Handled = true;
             }
+
+            if (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
+            {
+                if(Program.CharacterCount > 0)
+                    Program.CharacterCount--;
+
+                if (Program.CharacterCount < 10)
+                {
+                    CharCount1Label.Text = "   " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Refresh();
+                }
+
+                if (Program.CharacterCount > 10 && Program.CharacterCount < 100)
+                {
+                    CharCount1Label.Text = "  " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Refresh();
+                }
+
+                if (Program.CharacterCount > 100 && Program.CharacterCount <= 160)
+                {
+                    CharCount1Label.Text = Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Refresh();
+                }
+            }
+
+            if(isCharOrDigit == true | e.KeyCode == Keys.Space)
+            {
+                Program.CharacterCount++;
+
+                if (Program.CharacterCount < 10)
+                {
+                    CharCount1Label.Text = "   " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Refresh();
+                }
+
+                if (Program.CharacterCount > 10 && Program.CharacterCount < 100)
+                {
+                    CharCount1Label.Text = "  " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Refresh();
+                }
+
+                if (Program.CharacterCount > 100 && Program.CharacterCount <= 160)
+                {
+                    CharCount1Label.Text = Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Refresh();
+                }
+             }
         }
 
 
@@ -55,6 +106,11 @@ namespace GossbitBot_Chatroom
 
             else
             {
+                //AB - Resets character counter upon pressing send.
+                Program.CharacterCount = 0;
+                CharCount1Label.Text = "   " + Convert.ToString(Program.CharacterCount);
+                CharCount1Label.Refresh();
+
                 //AB - Adds the data in the UserMessageBox to the ConversationBox.
                 ConversationBox.Items.Add(Program.UserName + ": " + UserMessageBox.Text);
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.

@@ -8,6 +8,9 @@ namespace GossbitBot_Chatroom
     {
         //AB - A string to store the users inputted name.
         public static string UserName;
+
+        //AB - An int to store the number of characters in the users message.
+        public static int CharacterCount = 0;
         
 
         //AB - Creates objects used by in AIML.

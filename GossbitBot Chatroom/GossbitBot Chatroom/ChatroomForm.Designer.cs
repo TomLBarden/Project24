@@ -32,6 +32,8 @@
             this.UserMessageBox = new System.Windows.Forms.RichTextBox();
             this.SendButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.CharCount1Label = new System.Windows.Forms.Label();
+            this.CharCount2Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ConversationBox
@@ -45,7 +47,7 @@
             // UserMessageBox
             // 
             this.UserMessageBox.Location = new System.Drawing.Point(12, 396);
-            this.UserMessageBox.MaxLength = 256;
+            this.UserMessageBox.MaxLength = 160;
             this.UserMessageBox.Name = "UserMessageBox";
             this.UserMessageBox.Size = new System.Drawing.Size(418, 41);
             this.UserMessageBox.TabIndex = 1;
@@ -73,11 +75,31 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "User Is Typing....";
             // 
+            // CharCount1Label
+            // 
+            this.CharCount1Label.AutoSize = true;
+            this.CharCount1Label.Location = new System.Drawing.Point(379, 380);
+            this.CharCount1Label.Name = "CharCount1Label";
+            this.CharCount1Label.Size = new System.Drawing.Size(22, 13);
+            this.CharCount1Label.TabIndex = 4;
+            this.CharCount1Label.Text = "   0";
+            // 
+            // CharCount2Label
+            // 
+            this.CharCount2Label.AutoSize = true;
+            this.CharCount2Label.Location = new System.Drawing.Point(400, 380);
+            this.CharCount2Label.Name = "CharCount2Label";
+            this.CharCount2Label.Size = new System.Drawing.Size(33, 13);
+            this.CharCount2Label.TabIndex = 5;
+            this.CharCount2Label.Text = "/ 160";
+            // 
             // ChatroomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 449);
+            this.Controls.Add(this.CharCount2Label);
+            this.Controls.Add(this.CharCount1Label);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SendButton);
             this.Controls.Add(this.UserMessageBox);
@@ -94,5 +116,7 @@
         private System.Windows.Forms.Button SendButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox ConversationBox;
+        private System.Windows.Forms.Label CharCount1Label;
+        private System.Windows.Forms.Label CharCount2Label;
     }
 }
