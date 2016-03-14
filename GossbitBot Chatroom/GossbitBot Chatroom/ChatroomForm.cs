@@ -20,18 +20,18 @@ namespace GossbitBot_Chatroom
         //AB - Method used upon creation and first run of the form.
         private void ChatroomForm_Shown(object sender, EventArgs e)
         {
-            ////AB - Inputs a first message to the chat bot telling it the Users name.
-            //string FirstMessageToBot = "my name is " + Program.UserName;
-            //Request r = new Request(FirstMessageToBot, Program.myUser, Program.myBot);
-            //Result res = Program.myBot.Chat(r);
+            //AB - Inputs a first message to the chat bot telling it the Users name.
+            string FirstMessageToBot = "my name is " + Program.UserName;
+            Request r = new Request(FirstMessageToBot, Program.myUser, Program.myBot);
+            Result res = Program.myBot.Chat(r);
 
-            ////AB - Causes chatbot to wait briefly before sending the first message.
-            //var delay = Task.Delay(1000); //1 second/1000 ms
-            //delay.Wait();
-            //isTyping(res.Output);
+            //AB - Causes chatbot to wait briefly before sending the first message.
+            var delay = Task.Delay(1000); //1 second/1000 ms
+            delay.Wait();
+            isTyping(res.Output);
 
-            ////AB - Outputs the first sentence from the chatbot.
-            //ConversationBox.Items.Add("Marvin: " + res.Output);
+            //AB - Outputs the first sentence from the chatbot.
+            ConversationBox.Items.Add("Marvin: " + res.Output);
 
             //AB & ABo - Cursor starts in the text box.
             UserMessageBox.SelectionStart = UserMessageBox.Text.Length;
@@ -102,15 +102,13 @@ namespace GossbitBot_Chatroom
             }
 
 
-        }
-        
-        
+        }   
 
         //AB & LE & TB - All functionality that occurs when the send button is pressed.
         private void SendButton_Click(object sender, EventArgs e)
         {
-            string[] lines = new string[4];
-            
+            string[] UserLines = new string[4];
+            string[] BotLines = new string[4];
 
             //AB - Deals with the users message being sent.
             //AB - Handles an empty message box.
@@ -123,58 +121,9 @@ namespace GossbitBot_Chatroom
                 CharCount1Label.Text = "   0";
                 CharCount1Label.Refresh();
 
+                //AB & ABo - Method call to the lineSplitter function, that splits long messages into separate lines and outputs them.
+                lineSplitter(UserMessageBox.Text, UserLines, Program.UserName);
 
-                //AB & ABo - Splits user message onto multiple lines so can be viewed in form without scrolling
-                lines[0] = UserMessageBox.Text;
-                int count = 0;
-                int nameLength = Program.UserName.Length;
-                bool flag1 = false;
-                bool flag2 = false;
-                bool flag3 = false;
-
-
-                foreach (char c in lines[0])
-                {
-                    if (count < 50)
-                    {
-                        lines[1] = lines[1] + c;
-                        flag1 = true;
-                    }
-                    if (count >= 50 && count < 100)
-                    {
-                        lines[2] = lines[2] + c;
-                        flag2 = true;
-                    }
-                    if (count >= 100)
-                    {
-                        lines[3] = lines[3] + c;
-                        flag3 = true;
-                    }
-
-                    count++;
-                }
-
-                string nameSpacing = "";
-
-                for (int i = 0; i < nameLength; i++)
-                    nameSpacing = nameSpacing + "   ";
-
-
-                if (flag1 == true)
-                    ConversationBox.Items.Add(Program.UserName + ": " + lines[1]);
-
-
-                if (flag2 == true)
-                    ConversationBox.Items.Add(nameSpacing + lines[2]);
-
-
-                if (flag3 == true)
-                    ConversationBox.Items.Add(nameSpacing + lines[3]);
-
-
-
-                //AB - Adds the data in the UserMessageBox to the ConversationBox.
-                //ConversationBox.Items.Add(Program.UserName + ": " + UserMessageBox.Text);
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
                 ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
 
@@ -187,66 +136,28 @@ namespace GossbitBot_Chatroom
                 UserMessageBox.Text = null;
 
                 //AB - Adds a delay time to represent the lag of the connection between hosts before showing 'Seen', indicating the message arrived.
-                //var delay = Task.Delay(1500); //1 second/1000 ms
-                //delay.Wait();
-                //label1.Text = "✔Seen";
+                var delay = Task.Delay(1000); //1 second/1000 ms
+                delay.Wait();
+                label1.Text = "✔Seen";
 
                 //LE & TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
-                //isReading(userInput);
+                isReading(userInput);
 
                 //LE & TB - Displays 'Marvin is tpying...' label animation while bot replies 
-                //isTyping(res.Output);
+                isTyping(res.Output);
 
-                
+                //AB & ABo - Method call to the lineSplitter function, that splits long messages into separate lines and outputs them.
+                lineSplitter(res.Output, BotLines, "Marvin");    
 
-                //lines[0] = res.Output;
-                //int count = 0;
-                //bool flag1 = false;
-                //bool flag2 = false;
-                //bool flag3 = false;
-
-
-                //foreach (char c in lines[0])
-                //{
-                //    if (count < 50)
-                //    {
-                //        lines[1] = lines[1] + c;
-                //        count++;
-                //        flag1 = true;
-                //    }
-                //    if (count > 50 && count < 100)
-                //    {
-                //        lines[2] = lines[2] + c;
-                //        count++;
-                //        flag2 = true;
-                //    }
-                //    if (count > 100)
-                //    {
-                //        lines[3] = lines[3] + c;
-                //        count++;
-                //        flag3 = true;
-                //    }
-                //}
-                
-
-                //if(flag1 == true)
-                //    ConversationBox.Items.Add("Marvin: " + lines[1]);
-                //if (flag2 == true)
-                //    ConversationBox.Items.Add("Marvin: " + lines[2]);
-                //if (flag3 == true)
-                //    ConversationBox.Items.Add("Marvin: " + lines[3]);
-
-                //AB - Adds back the response genereated by the bot back into the conversation window.
-                //ConversationBox.Items.Add("Marvin: " + res.Output);
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
-                //ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
+                ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
             }
         }
 
         //LE & TB - Method for Reading time.
         private void isReading(string userInput)
         {
-            var delay = Task.Delay(userInput.Length * 100);
+            var delay = Task.Delay(userInput.Length * 75);
             delay.Wait();
         }
 
@@ -275,6 +186,82 @@ namespace GossbitBot_Chatroom
 
             waitDone = false;
             label1.Text = "";
+        }
+
+        //AB & ABo - Function to split long messages down into lines and output them to the conversation windows. Does not break mid word.
+        private void lineSplitter(string input, string[] output, string name)
+        {
+            //AB & ABo - An integer to store the number of characters iterated through in the message string.
+            int count = 0;
+
+            //AB & ABo - Three flags to determine which line of the message is being manipulated.
+            bool Line1 = true;
+            bool Line2 = false;
+            bool Line3 = false;
+
+            //AB & ABo - Two flags to indicate is a new line is required.
+            bool NewLine2 = false;
+            bool NewLine3 = false;
+            output[0] = input;
+
+            //AB & ABo - A foreach loop which iterates through each letter of the message and assigns it to the appropriate line.
+            foreach (char c in output[0])
+            {
+                //AB & ABo - If the program is dealing with the first line, it adds the characters to the first line string.
+                if (Line1 == true)
+                {
+                    output[1] = output[1] + c;
+                    count++;
+
+                    //AB & ABo - Once the first 50 characters have been added to the string AND the next character is an empty space, 
+                    //           the program moves to the next line.
+                    if (count > 50 && c == ' ')
+                    {
+                        Line1 = false;
+                        Line2 = true;
+                        NewLine2 = true;
+                        count = 0;
+                    }
+                }
+
+                //AB & ABo - If the program is dealing with the second, line it adds the characters to the first line string.
+                if (Line2 == true)
+                {
+                    output[2] = output[2] + c;
+                    count++;
+
+                    //AB & ABo - Once the first 50 characters have been added to the string AND the next character is an empty space, 
+                    //           the program moves to the next line.
+                    if (count > 50 && c == ' ')
+                    {
+                        Line2 = false;
+                        Line3 = true;
+                        NewLine3 = true;
+                        count = 0;
+                    }
+                }
+                //AB & ABo - If the program is dealing with the second, line it adds the characters to the first line string.
+                if (Line3 == true)
+                {
+                    output[3] = output[3] + c;
+                }
+            }
+
+            //AB & ABo - Creates a blank space for the spare lines equal to the length of the users name.
+            int nameLength = name.Length;
+            string nameSpacing = "";
+            for (int i = 0; i < nameLength; i++)
+                nameSpacing = nameSpacing + "   ";
+
+
+            //AB & ABo - Outputs the first line, and if required the second and third lines.
+            ConversationBox.Items.Add(name + ": " + output[1]);
+
+            if (NewLine2 == true)
+                ConversationBox.Items.Add(nameSpacing + output[2]);
+
+            if (NewLine3 == true)
+                ConversationBox.Items.Add(nameSpacing + output[3]);
         }
     }
 }
