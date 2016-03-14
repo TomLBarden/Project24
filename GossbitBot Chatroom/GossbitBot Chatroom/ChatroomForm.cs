@@ -119,19 +119,16 @@ namespace GossbitBot_Chatroom
                 //AB - Takes user string and generates the response from the AIML knowledge base.
                 Request r = new Request(UserMessageBox.Text, Program.myUser, Program.myBot);
                 Result res = Program.myBot.Chat(r);
-                
+
                 //AB - Sets the UserMessageBox to being empty.
+                string userInput = UserMessageBox.Text;
                 UserMessageBox.Text = null;
 
-                /* LE -ALLOW FOR READING TIME - Take string, measure length, calculate appropriate delay. */
-                //LE - Adds a delay with the Bot's response.
-                isReading();
-                var t = Task.Delay(1000); //1 second/1000 ms
-                t.Wait();
+                //LE - Adds a delay with the Bot's response to allow for 'Reading Time'.
+                isReading(userInput);
 
                 /* LE - 'isTyping' Function call - Take response, measure length, calculate appropriate time to display "User Is Typing" label. */
                 isTyping();
-
 
                 //AB - Adds back the response genereated by the bot back into the conversation window.
                 ConversationBox.Items.Add("Marvin: " + res.Output);
@@ -141,9 +138,10 @@ namespace GossbitBot_Chatroom
         }
 
         //LE - Method template for Reading time.
-        private void isReading()
+        private void isReading(string userInput)
         {
-
+            var delay = Task.Delay(userInput.Length * 100);
+            delay.Wait();
         }
 
         //LE - Method template for displaying "User Is Typing". 
