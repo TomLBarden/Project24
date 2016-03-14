@@ -7,6 +7,8 @@ namespace GossbitBot_Chatroom
 {
     public partial class ChatroomForm : Form
     {
+        bool waitDone = false;
+
         public ChatroomForm()
         {
             InitializeComponent();
@@ -124,11 +126,11 @@ namespace GossbitBot_Chatroom
                 string userInput = UserMessageBox.Text;
                 UserMessageBox.Text = null;
 
-                //LE - Adds a delay with the Bot's response to allow for 'Reading Time'.
+                //LE/TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
                 isReading(userInput);
 
-                /* LE - 'isTyping' Function call - Take response, measure length, calculate appropriate time to display "User Is Typing" label. */
-                isTyping();
+                //LE/TB - Displays 'Marvin is tpying...' label animation while bot replies 
+                isTyping(res.Output);
 
                 //AB - Adds back the response genereated by the bot back into the conversation window.
                 ConversationBox.Items.Add("Marvin: " + res.Output);
@@ -137,17 +139,38 @@ namespace GossbitBot_Chatroom
             }
         }
 
-        //LE - Method template for Reading time.
+        //LE/TB - Method for Reading time.
         private void isReading(string userInput)
         {
             var delay = Task.Delay(userInput.Length * 100);
             delay.Wait();
         }
 
-        //LE - Method template for displaying "User Is Typing". 
-        private void isTyping()
+        //LE/TB - Method for displaying "User Is Typing". 
+        private void isTyping(string output)
         {
+            int waitDelay = 300;
 
+            var delay = Task.Delay(output.Length * 100).ContinueWith(_ =>
+            {
+                waitDone = true;
+            });
+            
+            while (waitDone == false)
+            {
+                Task.Delay(waitDelay).Wait();
+                label1.Text = "Marvin is typing";
+                Task.Delay(waitDelay).Wait();
+                label1.Text = "Marvin is typing.";
+                Task.Delay(waitDelay).Wait();
+                label1.Text = "Marvin is typing..";
+                Task.Delay(waitDelay).Wait();
+                label1.Text = "Marvin is typing...";
+                Task.Delay(waitDelay).Wait();
+            }
+
+            waitDone = false;
+            label1.Text = "";
         }
     }
 }
