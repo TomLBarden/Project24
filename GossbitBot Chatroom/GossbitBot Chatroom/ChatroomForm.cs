@@ -20,18 +20,18 @@ namespace GossbitBot_Chatroom
         //AB - Method used upon creation and first run of the form.
         private void ChatroomForm_Shown(object sender, EventArgs e)
         {
-            //AB - Inputs a first message to the chat bot telling it the Users name.
-            string FirstMessageToBot = "my name is " + Program.UserName;
-            Request r = new Request(FirstMessageToBot, Program.myUser, Program.myBot);
-            Result res = Program.myBot.Chat(r);
+            ////AB - Inputs a first message to the chat bot telling it the Users name.
+            //string FirstMessageToBot = "my name is " + Program.UserName;
+            //Request r = new Request(FirstMessageToBot, Program.myUser, Program.myBot);
+            //Result res = Program.myBot.Chat(r);
 
-            //AB - Causes chatbot to wait briefly before sending the first message.
-            var delay = Task.Delay(1000); //1 second/1000 ms
-            delay.Wait();
-            isTyping(res.Output);
+            ////AB - Causes chatbot to wait briefly before sending the first message.
+            //var delay = Task.Delay(1000); //1 second/1000 ms
+            //delay.Wait();
+            //isTyping(res.Output);
 
-            //AB - Outputs the first sentence from the chatbot.
-            ConversationBox.Items.Add("Marvin: " + res.Output);
+            ////AB - Outputs the first sentence from the chatbot.
+            //ConversationBox.Items.Add("Marvin: " + res.Output);
 
             //AB & ABo - Cursor starts in the text box.
             UserMessageBox.SelectionStart = UserMessageBox.Text.Length;
@@ -69,7 +69,7 @@ namespace GossbitBot_Chatroom
                 }
 
                 //AB - Updates the count display, with the correct formatting for a 3 digit count.
-                if (UserMessageBox.Text.Length + 1 >= 100 && UserMessageBox.Text.Length + 1 <= 160)
+                if (UserMessageBox.Text.Length + 1 >= 100 && UserMessageBox.Text.Length + 1 <= 150)
                 {
                     CharCount1Label.Text = Convert.ToString(UserMessageBox.Text.Length - 1);
                     CharCount1Label.Refresh();                    
@@ -94,17 +94,24 @@ namespace GossbitBot_Chatroom
                 }
 
                 //AB - Updates the count display, with the correct formatting for a 3 digit count.
-                if (UserMessageBox.Text.Length + 1 >= 100 && UserMessageBox.Text.Length + 1 <= 160)
+                if (UserMessageBox.Text.Length + 1 >= 100 && UserMessageBox.Text.Length + 1 <= 150)
                 {
                     CharCount1Label.Text = Convert.ToString(UserMessageBox.Text.Length + 1);
                     CharCount1Label.Refresh();
-                }                
-             }
+                }
+            }
+
+
         }
+        
+        
 
         //AB & LE & TB - All functionality that occurs when the send button is pressed.
         private void SendButton_Click(object sender, EventArgs e)
         {
+            string[] lines = new string[4];
+            
+
             //AB - Deals with the users message being sent.
             //AB - Handles an empty message box.
             if (string.IsNullOrWhiteSpace(UserMessageBox.Text))
@@ -116,8 +123,58 @@ namespace GossbitBot_Chatroom
                 CharCount1Label.Text = "   0";
                 CharCount1Label.Refresh();
 
+
+                //AB & ABo - Splits user message onto multiple lines so can be viewed in form without scrolling
+                lines[0] = UserMessageBox.Text;
+                int count = 0;
+                int nameLength = Program.UserName.Length;
+                bool flag1 = false;
+                bool flag2 = false;
+                bool flag3 = false;
+
+
+                foreach (char c in lines[0])
+                {
+                    if (count < 50)
+                    {
+                        lines[1] = lines[1] + c;
+                        flag1 = true;
+                    }
+                    if (count >= 50 && count < 100)
+                    {
+                        lines[2] = lines[2] + c;
+                        flag2 = true;
+                    }
+                    if (count >= 100)
+                    {
+                        lines[3] = lines[3] + c;
+                        flag3 = true;
+                    }
+
+                    count++;
+                }
+
+                string nameSpacing = "";
+
+                for (int i = 0; i < nameLength; i++)
+                    nameSpacing = nameSpacing + "   ";
+
+
+                if (flag1 == true)
+                    ConversationBox.Items.Add(Program.UserName + ": " + lines[1]);
+
+
+                if (flag2 == true)
+                    ConversationBox.Items.Add(nameSpacing + lines[2]);
+
+
+                if (flag3 == true)
+                    ConversationBox.Items.Add(nameSpacing + lines[3]);
+
+
+
                 //AB - Adds the data in the UserMessageBox to the ConversationBox.
-                ConversationBox.Items.Add(Program.UserName + ": " + UserMessageBox.Text);
+                //ConversationBox.Items.Add(Program.UserName + ": " + UserMessageBox.Text);
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
                 ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
 
@@ -130,20 +187,59 @@ namespace GossbitBot_Chatroom
                 UserMessageBox.Text = null;
 
                 //AB - Adds a delay time to represent the lag of the connection between hosts before showing 'Seen', indicating the message arrived.
-                var delay = Task.Delay(1500); //1 second/1000 ms
-                delay.Wait();
-                label1.Text = "✔Seen";
+                //var delay = Task.Delay(1500); //1 second/1000 ms
+                //delay.Wait();
+                //label1.Text = "✔Seen";
 
                 //LE & TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
-                isReading(userInput);
+                //isReading(userInput);
 
                 //LE & TB - Displays 'Marvin is tpying...' label animation while bot replies 
-                isTyping(res.Output);
+                //isTyping(res.Output);
+
+                
+
+                //lines[0] = res.Output;
+                //int count = 0;
+                //bool flag1 = false;
+                //bool flag2 = false;
+                //bool flag3 = false;
+
+
+                //foreach (char c in lines[0])
+                //{
+                //    if (count < 50)
+                //    {
+                //        lines[1] = lines[1] + c;
+                //        count++;
+                //        flag1 = true;
+                //    }
+                //    if (count > 50 && count < 100)
+                //    {
+                //        lines[2] = lines[2] + c;
+                //        count++;
+                //        flag2 = true;
+                //    }
+                //    if (count > 100)
+                //    {
+                //        lines[3] = lines[3] + c;
+                //        count++;
+                //        flag3 = true;
+                //    }
+                //}
+                
+
+                //if(flag1 == true)
+                //    ConversationBox.Items.Add("Marvin: " + lines[1]);
+                //if (flag2 == true)
+                //    ConversationBox.Items.Add("Marvin: " + lines[2]);
+                //if (flag3 == true)
+                //    ConversationBox.Items.Add("Marvin: " + lines[3]);
 
                 //AB - Adds back the response genereated by the bot back into the conversation window.
-                ConversationBox.Items.Add("Marvin: " + res.Output);
+                //ConversationBox.Items.Add("Marvin: " + res.Output);
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
-                ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
+                //ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
             }
         }
 

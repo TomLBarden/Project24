@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ConversationBox = new System.Windows.Forms.ListBox();
             this.UserMessageBox = new System.Windows.Forms.RichTextBox();
             this.SendButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CharCount1Label = new System.Windows.Forms.Label();
             this.CharCount2Label = new System.Windows.Forms.Label();
+            this.ConversationBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // ConversationBox
-            // 
-            this.ConversationBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConversationBox.FormattingEnabled = true;
-            this.ConversationBox.ItemHeight = 18;
-            this.ConversationBox.Location = new System.Drawing.Point(12, 12);
-            this.ConversationBox.Name = "ConversationBox";
-            this.ConversationBox.Size = new System.Drawing.Size(489, 292);
-            this.ConversationBox.TabIndex = 0;
             // 
             // UserMessageBox
             // 
@@ -96,7 +86,20 @@
             this.CharCount2Label.Name = "CharCount2Label";
             this.CharCount2Label.Size = new System.Drawing.Size(37, 16);
             this.CharCount2Label.TabIndex = 5;
-            this.CharCount2Label.Text = "/ 160";
+            this.CharCount2Label.Text = "/ 150";
+            // 
+            // ConversationBox
+            // 
+            this.ConversationBox.ColumnWidth = 480;
+            this.ConversationBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConversationBox.FormattingEnabled = true;
+            this.ConversationBox.HorizontalScrollbar = true;
+            this.ConversationBox.ItemHeight = 18;
+            this.ConversationBox.Location = new System.Drawing.Point(15, 29);
+            this.ConversationBox.MaximumSize = new System.Drawing.Size(489, 292);
+            this.ConversationBox.Name = "ConversationBox";
+            this.ConversationBox.Size = new System.Drawing.Size(489, 292);
+            this.ConversationBox.TabIndex = 0;
             // 
             // ChatroomForm
             // 
@@ -120,8 +123,8 @@
         private System.Windows.Forms.RichTextBox UserMessageBox;
         private System.Windows.Forms.Button SendButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox ConversationBox;
         private System.Windows.Forms.Label CharCount1Label;
         private System.Windows.Forms.Label CharCount2Label;
+        private System.Windows.Forms.ListBox ConversationBox;
     }
 }

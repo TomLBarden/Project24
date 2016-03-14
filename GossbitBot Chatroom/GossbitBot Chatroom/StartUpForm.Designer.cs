@@ -35,7 +35,7 @@
             // 
             // UserNameBox
             // 
-            this.UserNameBox.Location = new System.Drawing.Point(16, 93);
+            this.UserNameBox.Location = new System.Drawing.Point(151, 121);
             this.UserNameBox.Name = "UserNameBox";
             this.UserNameBox.Size = new System.Drawing.Size(141, 23);
             this.UserNameBox.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // ChatButton
             // 
-            this.ChatButton.Location = new System.Drawing.Point(173, 93);
+            this.ChatButton.Location = new System.Drawing.Point(308, 121);
             this.ChatButton.Name = "ChatButton";
             this.ChatButton.Size = new System.Drawing.Size(67, 23);
             this.ChatButton.TabIndex = 1;
@@ -55,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(148, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 65);
             this.label1.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(246, 127);
+            this.ClientSize = new System.Drawing.Size(513, 449);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ChatButton);
             this.Controls.Add(this.UserNameBox);
