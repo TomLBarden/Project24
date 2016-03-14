@@ -15,14 +15,10 @@ namespace GossbitBot_Chatroom
 
             //AB - Calls the shown method when the form is first initialised.
             this.Shown += new System.EventHandler(this.ChatroomForm_Shown);
-
-            //AB & ABo - Cursor starts in the text box when the form is launched.
-            UserMessageBox.SelectionStart = UserMessageBox.Text.Length; 
-            UserMessageBox.Focus();
         }
 
         //AB - Method used upon creation and first run of the form.
-        private void ChatroomForm_Shown(Object sender, EventArgs e)
+        private void ChatroomForm_Shown(object sender, EventArgs e)
         {
             //AB - Inputs a first message to the chat bot telling it the Users name.
             string FirstMessageToBot = "my name is " + Program.UserName;
@@ -30,11 +26,16 @@ namespace GossbitBot_Chatroom
             Result res = Program.myBot.Chat(r);
 
             //AB - Causes chatbot to wait briefly before sending the first message.
-            var t = Task.Delay(1000); //1 second/1000 ms
-            t.Wait();
+            var delay = Task.Delay(1000); //1 second/1000 ms
+            delay.Wait();
+            isTyping(res.Output);
 
             //AB - Outputs the first sentence from the chatbot.
             ConversationBox.Items.Add("Marvin: " + res.Output);
+
+            //AB & ABo - Cursor starts in the text box.
+            UserMessageBox.SelectionStart = UserMessageBox.Text.Length;
+            UserMessageBox.Focus();
         }
 
         //AB & ABo - Event that occurs when the user tpyes in the UserMessageBox.
@@ -50,55 +51,58 @@ namespace GossbitBot_Chatroom
                 e.Handled = true;
             }
 
+            //AB - Performs a decrease of the count when the backspace or enter key is pressed.
             if (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete)
             {
-                if(Program.CharacterCount > 0)
-                    Program.CharacterCount--;
-
-                if (Program.CharacterCount < 10)
+                //AB - Updates the count display, with the correct formatting for a 1 digit count.
+                if (UserMessageBox.Text.Length + 1 > 1 && UserMessageBox.Text.Length + 1 <= 9)
                 {
-                    CharCount1Label.Text = "   " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Text = "   " + Convert.ToString(UserMessageBox.Text.Length - 1);
                     CharCount1Label.Refresh();
                 }
 
-                if (Program.CharacterCount > 10 && Program.CharacterCount < 100)
+                //AB - Updates the count display, with the correct formatting for a 2 digit count.
+                if (UserMessageBox.Text.Length + 1 >= 10 && UserMessageBox.Text.Length + 1 <= 99)
                 {
-                    CharCount1Label.Text = "  " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Text = "  " + Convert.ToString(UserMessageBox.Text.Length - 1);
                     CharCount1Label.Refresh();
                 }
 
-                if (Program.CharacterCount > 100 && Program.CharacterCount <= 160)
+                //AB - Updates the count display, with the correct formatting for a 3 digit count.
+                if (UserMessageBox.Text.Length + 1 >= 100 && UserMessageBox.Text.Length + 1 <= 160)
                 {
-                    CharCount1Label.Text = Convert.ToString(Program.CharacterCount);
-                    CharCount1Label.Refresh();
+                    CharCount1Label.Text = Convert.ToString(UserMessageBox.Text.Length - 1);
+                    CharCount1Label.Refresh();                    
                 }
             }
 
-            if(isCharOrDigit == true | e.KeyCode == Keys.Space)
+            //AB - Performs an increase of the count when a alphanumeric character is pressed.
+            if (isCharOrDigit == true | e.KeyCode == Keys.Space)
             {
-                Program.CharacterCount++;
-
-                if (Program.CharacterCount < 10)
+                //AB - Updates the count display, with the correct formatting for a 1 digit count.
+                if (UserMessageBox.Text.Length + 1 <= 9)
                 {
-                    CharCount1Label.Text = "   " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Text = "   " + Convert.ToString(UserMessageBox.Text.Length + 1);
                     CharCount1Label.Refresh();
                 }
 
-                if (Program.CharacterCount > 10 && Program.CharacterCount < 100)
+                //AB - Updates the count display, with the correct formatting for a 2 digit count.
+                if (UserMessageBox.Text.Length + 1 >= 10 && UserMessageBox.Text.Length + 1 <= 99)
                 {
-                    CharCount1Label.Text = "  " + Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Text = "  " + Convert.ToString(UserMessageBox.Text.Length + 1);
                     CharCount1Label.Refresh();
                 }
 
-                if (Program.CharacterCount > 100 && Program.CharacterCount <= 160)
+                //AB - Updates the count display, with the correct formatting for a 3 digit count.
+                if (UserMessageBox.Text.Length + 1 >= 100 && UserMessageBox.Text.Length + 1 <= 160)
                 {
-                    CharCount1Label.Text = Convert.ToString(Program.CharacterCount);
+                    CharCount1Label.Text = Convert.ToString(UserMessageBox.Text.Length + 1);
                     CharCount1Label.Refresh();
-                }
+                }                
              }
         }
 
-
+        //AB & LE & TB - All functionality that occurs when the send button is pressed.
         private void SendButton_Click(object sender, EventArgs e)
         {
             //AB - Deals with the users message being sent.
@@ -109,8 +113,7 @@ namespace GossbitBot_Chatroom
             else
             {
                 //AB - Resets character counter upon pressing send.
-                Program.CharacterCount = 0;
-                CharCount1Label.Text = "   " + Convert.ToString(Program.CharacterCount);
+                CharCount1Label.Text = "   0";
                 CharCount1Label.Refresh();
 
                 //AB - Adds the data in the UserMessageBox to the ConversationBox.
@@ -126,10 +129,15 @@ namespace GossbitBot_Chatroom
                 string userInput = UserMessageBox.Text;
                 UserMessageBox.Text = null;
 
-                //LE/TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
+                //AB - Adds a delay time to represent the lag of the connection between hosts before showing 'Seen', indicating the message arrived.
+                var delay = Task.Delay(1500); //1 second/1000 ms
+                delay.Wait();
+                label1.Text = "✔Seen";
+
+                //LE & TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
                 isReading(userInput);
 
-                //LE/TB - Displays 'Marvin is tpying...' label animation while bot replies 
+                //LE & TB - Displays 'Marvin is tpying...' label animation while bot replies 
                 isTyping(res.Output);
 
                 //AB - Adds back the response genereated by the bot back into the conversation window.
@@ -139,14 +147,14 @@ namespace GossbitBot_Chatroom
             }
         }
 
-        //LE/TB - Method for Reading time.
+        //LE & TB - Method for Reading time.
         private void isReading(string userInput)
         {
             var delay = Task.Delay(userInput.Length * 100);
             delay.Wait();
         }
 
-        //LE/TB - Method for displaying "User Is Typing". 
+        //LE & TB - Method for displaying "User Is Typing". 
         private void isTyping(string output)
         {
             int waitDelay = 300;

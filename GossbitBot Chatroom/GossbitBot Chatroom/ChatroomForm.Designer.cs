@@ -38,25 +38,28 @@
             // 
             // ConversationBox
             // 
+            this.ConversationBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConversationBox.FormattingEnabled = true;
+            this.ConversationBox.ItemHeight = 18;
             this.ConversationBox.Location = new System.Drawing.Point(12, 12);
             this.ConversationBox.Name = "ConversationBox";
-            this.ConversationBox.Size = new System.Drawing.Size(489, 303);
+            this.ConversationBox.Size = new System.Drawing.Size(489, 292);
             this.ConversationBox.TabIndex = 0;
             // 
             // UserMessageBox
             // 
-            this.UserMessageBox.Location = new System.Drawing.Point(12, 396);
+            this.UserMessageBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserMessageBox.Location = new System.Drawing.Point(12, 373);
             this.UserMessageBox.MaxLength = 160;
             this.UserMessageBox.Name = "UserMessageBox";
-            this.UserMessageBox.Size = new System.Drawing.Size(418, 41);
+            this.UserMessageBox.Size = new System.Drawing.Size(418, 64);
             this.UserMessageBox.TabIndex = 1;
             this.UserMessageBox.Text = "";
             this.UserMessageBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserMessageBox_KeyDown);
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(452, 396);
+            this.SendButton.Location = new System.Drawing.Point(452, 382);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(49, 41);
             this.SendButton.TabIndex = 2;
@@ -68,9 +71,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(13, 361);
+            this.label1.Location = new System.Drawing.Point(12, 348);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 3;
@@ -78,18 +81,20 @@
             // CharCount1Label
             // 
             this.CharCount1Label.AutoSize = true;
-            this.CharCount1Label.Location = new System.Drawing.Point(379, 380);
+            this.CharCount1Label.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharCount1Label.Location = new System.Drawing.Point(373, 353);
             this.CharCount1Label.Name = "CharCount1Label";
-            this.CharCount1Label.Size = new System.Drawing.Size(22, 13);
+            this.CharCount1Label.Size = new System.Drawing.Size(27, 16);
             this.CharCount1Label.TabIndex = 4;
             this.CharCount1Label.Text = "   0";
             // 
             // CharCount2Label
             // 
             this.CharCount2Label.AutoSize = true;
-            this.CharCount2Label.Location = new System.Drawing.Point(400, 380);
+            this.CharCount2Label.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharCount2Label.Location = new System.Drawing.Point(397, 353);
             this.CharCount2Label.Name = "CharCount2Label";
-            this.CharCount2Label.Size = new System.Drawing.Size(33, 13);
+            this.CharCount2Label.Size = new System.Drawing.Size(37, 16);
             this.CharCount2Label.TabIndex = 5;
             this.CharCount2Label.Text = "/ 160";
             // 
