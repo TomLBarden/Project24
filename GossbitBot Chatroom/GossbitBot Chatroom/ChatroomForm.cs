@@ -251,7 +251,7 @@ namespace GossbitBot_Chatroom
             int nameLength = name.Length;
             string nameSpacing = "";
             for (int i = 0; i < nameLength; i++)
-                nameSpacing = nameSpacing + "   ";
+                nameSpacing = nameSpacing + "  ";
 
 
             //AB & ABo - Outputs the first line, and if required the second and third lines.
