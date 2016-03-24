@@ -122,7 +122,7 @@ namespace GossbitBot_Chatroom
                 CharCount1Label.Refresh();
 
                 //AB & ABo - Method call to the lineSplitter function, that splits long messages into separate lines and outputs them.
-                lineSplitter(UserMessageBox.Text, UserLines, Program.UserName);
+                lineSplitter(UserMessageBox.Text, UserLines, "You");
 
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
                 ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
@@ -215,7 +215,7 @@ namespace GossbitBot_Chatroom
 
                     //AB & ABo - Once the first 50 characters have been added to the string AND the next character is an empty space, 
                     //           the program moves to the next line.
-                    if (count > 50 && c == ' ')
+                    if (count > 60 && c == ' ')
                     {
                         Line1 = false;
                         Line2 = true;
@@ -232,7 +232,7 @@ namespace GossbitBot_Chatroom
 
                     //AB & ABo - Once the first 50 characters have been added to the string AND the next character is an empty space, 
                     //           the program moves to the next line.
-                    if (count > 50 && c == ' ')
+                    if (count > 60 && c == ' ')
                     {
                         Line2 = false;
                         Line3 = true;

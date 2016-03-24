@@ -13,7 +13,6 @@ C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.pdb
-C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\AIMLbot.pdb
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.StartUpForm.resources
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.ChatroomForm.resources
@@ -33,3 +32,4 @@ C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Cha
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe.config
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
+C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.WaitingForm.resources
