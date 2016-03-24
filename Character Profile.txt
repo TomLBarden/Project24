@@ -7,10 +7,14 @@ Family/Friends:
 	Siblings - 
 	
 	Partner - 
+	Girlfriend - Mary
 Stories:
 //stories preferably will make the character feel emotional when telling the user about them
 //stories should lead the user to ask questions
 
 	Recently cheated on by partner
+		still deeply in love with her
+		she doesn't feel the same
 		may ask the user for advice
-		
+			how to get her back?
+			

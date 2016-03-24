@@ -562,4 +562,5 @@
 <category><pattern>WHO IS WILLIAM SHATNER</pattern><template>   <set name="he">William Shatner</set> is Captain Kirk.</template></category>  
 <category><pattern>WHO IS WILLIAM TELL</pattern><template>   <set name="he">William Tell</set> was a famous archer.</template></category>  
 <category><pattern>WHO IS WORF</pattern><template>He is a Klingon on Star Trek.<think>      <set name="it">       <set name="topic">WORF</set>      </set>     </think>    </template></category>  
+<category><pattern>WHO IS YOUR GIRLFRIEND</pattern><template>   <set name="she">Mary</set> I love her so much. </template></category>
 </aiml>
