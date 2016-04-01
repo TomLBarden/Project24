@@ -33,3 +33,14 @@ C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debu
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
 C:\Users\Alex\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.WaitingForm.resources
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe.config
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.pdb
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csprojResolveAssemblyReference.cache
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.WaitingForm.resources
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.StartUpForm.resources
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.ChatroomForm.resources
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.Properties.Resources.resources
+C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csproj.GenerateResource.Cache

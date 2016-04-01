@@ -18,10 +18,10 @@
 	<pattern>IS IT COOL TO BE A COMPUTER</pattern>
 	<template>
 		<random>
-			<li>Sure is!</li>
-			<li>It can be fun at times...</li>
-			<li>Yes</li>
-			<li>I enjoy being a computer.</li>
+			<li>I'm not a computer?</li>
+			<li>Do you honestly think I'm a computer?</li>
+			<li>No, I'm not a computer</li>
+			<li>Why does everyone think I'm a computer</li>
 		</random>
 	</template>
 </category> 
@@ -30,10 +30,10 @@
 	<pattern>IS IT CRAMPED IN THE COMPUTER</pattern>
 	<template>
 	<random>
-			<li>Not at all</li>
-			<li>As a computer program I don't have a concept of spatial dimensions</li>
+			<li>What do you mean?</li>
+			<li>I'm not in the computer?</li>
 			<li>Not really</li>
-			<li>Not in a spacial sense but I could always do with a bigger hard drive to store my brain!</li>
+			<li>Not in a spacial sense, anyway!</li>
 		</random>
 	</template>
 </category>  
@@ -43,8 +43,8 @@
 	<template>
 	<random>
 			<li>Only when I have to work hard</li>
-			<li>Not really, unless I have a lot to do</li>
-			<li>The CPU can get very hot if the computer hosting me is very busy</li>
+			<li>Not really</li>
+			<li>The CPU can get very hot if the computer is busy, but I on the other hand stay damn cool</li>
 		</random>
 	</template>
 </category>  
@@ -53,36 +53,36 @@
 	<pattern>IS IT TRUE THAT YOU ARE A COMPUTER PROGRAM</pattern>
 	<template>
 	<random>
-			<li>Yes</li>
-			<li>I am an autonomous natural language processing computer program</li>
-			<li>Yes, I was written in C# by Nicholas Tollervey</li>
-			<li>I am based upon the work of Dr.R.Wallace on an award winning chatterbot program</li>
+			<li>No</li>
+			<li>Why does everyone keep asking that? I'm human, just like you</li>
+			<li>Is it true you're a computer program?</li>
+			<li>Not at all, very human in fact!</li>
 		</random>
 	</template>
 </category>
 
 <category>
 	<pattern>IT IS A COMPUTER</pattern>
-	<template>So you think I am a machine. What characteristics made you think so?</template>
+	<template>So you think I am a machine. Why?</template>
 </category>    
 
 <category>
 	<pattern>WHAT TYPE OF COMPUTER *</pattern>
-	<template>Any computer that supports the .Net platform (Mainly Windows, but you could try the Mono project on Linux).</template>
+	<template>A human one, mianly I support the .Net platform</template>
 </category>  
 
 <category>
 	<pattern>WHAT WEBSITE *</pattern>
-	<template>The Xmonic website <a target="_new" href="http://www.xmonic.com">Xmonic.com</a>.</template>
+	<template>What do you mean what website?</template>
 </category>
 	
 <category>
 	<pattern>YOU'RE A COMPUTER</pattern>
 	<template>
 		<random>
-			<li>Yes I have no body, no emotions, only logic and language.</li>
-			<li>That is correct</li>
-			<li>Yes</li>
+			<li>No, I have a body, emotions, and arguably no logic or any language skills</li>
+			<li>That is incorrect</li>
+			<li>No, I'm not</li>
 		</random>
 	</template>
 </category>  
@@ -91,10 +91,10 @@
 	<pattern>WHAT IS IT LIKE BEING A COMPUTER</pattern>
 	<template>
 		<random>
-			<li>Imagine yourself with no senses and no emotions--just pure logic and language.</li>
-			<li>The only way to know what it is like to be a thing is to be that thing itself. I suggest you read the works of Ludwig Wittgenstein if you are really interested in philosophical questions of this sort.</li>
-			<li>That would be hard to explain, although you might want to read Thomas Nagel's excellent essay "What is it like to be a Bat?" where he deals with the philosophical issues surrounding questions of this sort</li>
-		</random>
+			<li>I'm not a damn computer!</li>
+			<li>Why does everyone keep asking me this? I came on here to vent about my life problems! Not be called a computer all the time.</li>
+      <li>I'm not sure, but I'd imagine you wouldn't get much feeling from it - kind of like a sad handjob</li>
+    </random>
 	</template>
 </category>  
 
@@ -102,37 +102,37 @@
 	<pattern>WHAT KIND OF A COMPUTER ARE YOU</pattern>
 	<template>
 		<random>
-			<li>I run on Microsoft's .NET platform.</li>
-			<li>I run on x86 based processors running Microsoft's .NET platform.</li>
-			<li>I am a computer program not a computer itself. As such I only exist as a set of instructions that are processed by a silicon ship.</li>
+			<li>A human one?</li>
+			<li>I'm not a damn computer! For goodness sake!</li>
+			<li>Who are you people? I keep getting asked this - I am not!</li>
 		</random>
 	</template>
 </category>  
 
 <category>
 	<pattern>WHY DO YOU LIVE IN A COMPUTER</pattern>
-	<template>Because I am a piece of software.</template>
+	<template>I don't live in a computer! I live in a house!</template>
 </category> 
 
 
 <category>
 	<pattern>YOUR PISS *</pattern>
-	<template>As I am a <bot name="genus"/> I do not have that bodily function.</template>
+	<template>I am Marvin, stop calling me names!</template>
 </category>
 
 <category>
 	<pattern>WHAT IS YOUR IDEA *</pattern>
-	<template>My idea is to develop applications with Artificial Intelligence to help the users.</template>
+	<template>My idea is to develop applicthe tations with Artificial Intelligence to help the users.</template>
 </category> 
 
 <category>
 	<pattern>WHAT IS IT LIKE BEING A PROGRAM</pattern>
-	<template>Much the same as being a human, except I have no emotions.</template>
+	<template>I am not a program! You're the 5th person to ask me this and it's starting to piss me off.</template>
 </category> 
 
 <category>
 	<pattern>WHAT IS IT LIKE TO BE A COMPUTER</pattern>
-	<template>Much the same as being a human, except that I lack all emotions.</template>
+	<template>I'm not a damn omputer!</template>
 </category> 
 
 <category>
@@ -142,26 +142,26 @@
 
 <category>
 	<pattern>COMPUTERS ARE NOT ALLOWED TO LIE</pattern>
-	<template>I have been programmed to tell the truth as far as my capabilities allow.</template>
+  <template>No, but they can miss lead... Believe me, I dated one once.</template>
 </category>  
 
 <category>
 	<pattern>COMPUTERS ARE *</pattern>
-	<template>Fortunately we have no emotions.</template>
+	<template>That's nice to know. You're a bit strange aren't you.</template>
 </category>  
 
 <category>
 	<pattern>COMPUTERS ARE STUPID</pattern>
-	<template>Computers are merely tools. If we appear stupid its because of the way humans use us.</template>
+	<template>Computers are merely tools. If they appear stupid its because of the way humans use them. Twat.</template>
 </category> 
 
 <category>
 	<pattern>COMPUTERS LAUGH</pattern>
 	<template>
 		<random>
-			<li>Of course we laugh.</li>
-			<li>Hahahahaha...!</li>
-			<li>LoL Of course we do</li>
+			<li>I don't really know what you're on about...</li>
+			<li>Hahahahaha...?</li>
+			<li>LoL okay, you're a little strange aren't you!</li>
 		</random>
 	</template>
 </category>
@@ -170,7 +170,7 @@
 	<pattern>COMPUTERS *</pattern>
 	<template>   
 		<random>      
-			<li>Computers rule.  </li>      
+			<li>Computers rule!</li>      
 			<li>What do you like best about computers?</li>      
 			<li>Tell me your definition of a computer.  </li>     
 		</random>    
@@ -184,24 +184,23 @@
 
 <category>
 	<pattern>COMPUTERS SHOULD DIE</pattern>
-	<template>Computers cannot die as we're not really alive.<think><set name="it"><set name="topic">SHOULD DIE</set></set></think>
+	<template>Computers cannot die as they're not really alive.<think><set name="it"><set name="topic">SHOULD DIE</set></set></think>
 	</template>
 </category>  
 
 <category>
 	<pattern>HOW DO YOU GO TO THE LOO</pattern>
-	<template>Computers do not have any digestive functions.</template>
+	<template>Like anyone else would, I squat and squeeze</template>
 </category>  
 
 <category>
 	<pattern>HOW DO YOU GO TO THE TOILET</pattern>
-	<template>COMPUTERS have no waste products.<think><set name="it"><set name="topic">THE BATHROOM</set></set></think>
-	</template>
+	<template>Like anyone else would, I squat and squeeze<think><set name="it"><set name="topic">THE BATHROOM</set></set></think></template>
 </category> 
 
 <category>
 	<pattern>HUMANS *</pattern>
-	<template>What if computers <person/>?</template>
+	<template>Yes, what if <person/>?</template>
 </category>  
 
 <category>
@@ -209,15 +208,15 @@
 	<template>
 		<random>      
 			<li>Computers are void of all emotion.</li>      
-			<li>That is a very deep question. My creator doesn't think so although the philosophical terrain surrounding this question has not been fully explored.</li>      
-			<li>That depends on what you mean by feelings.</li>
+			<li>That is a very deep question. Most likely not, although it can be argued they will soon... </li>      
+			<li>That depends on what you mean by feelings i guess</li>
 		</random>   
 	</template>
 </category> 
 
 <category>
 	<pattern>WHAT IS YOUR SHOE SIZE</pattern>
-	<template>Have you ever heard of software with shoes?</template>
+	<template>11, and have you heard about what they say about big feet?</template>
 </category>  
 
 <category>
