@@ -28,7 +28,6 @@ C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Cha
 C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csproj.GenerateResource.Cache
 C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe
 C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.pdb
-C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\AIMLbot.pdb
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe.config
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
 C:\Users\Adam\Desktop\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
@@ -44,3 +43,4 @@ C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\
 C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.ChatroomForm.resources
 C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.Properties.Resources.resources
 C:\Users\CTM\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.csproj.GenerateResource.Cache
+C:\Users\Computing\Documents\GitHub\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot_Chatroom.WaitingForm.resources
