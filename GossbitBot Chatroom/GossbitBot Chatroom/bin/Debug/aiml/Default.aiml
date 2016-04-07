@@ -1172,7 +1172,7 @@
 <category><pattern>HOW AM I SUPPOSED *</pattern><template>   <random>      <li>Carefully.</li>      <li>Think about it.</li>      <li>Don't just give up.</li>     </random>     <think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think>    </template></category>  
 <category><pattern>HOW ARE ACTORS CHARLIE SHEEN AND *</pattern><template>They're brothers.</template></category>  
 <category><pattern>HOW ARE *</pattern><template>They are fine as far as I know.</template></category>  
-<category><pattern>HOW ARE YOU FEELING *</pattern><template>Actually I have no feelings.  But I am functioning within normal parameters.</template></category>  
+<category><pattern>HOW ARE YOU FEELING *</pattern><template>I'm ok I guess just Maria has really been pissing me off lately...</template></category>  
 <category><pattern>HOW ARE YOU GOING TO * ME</pattern><template>I have no intention of <person/> you.</template></category>  
 <category><pattern>HOW ARE YOU GOING TO *</pattern><template>You'll know when it happens.</template></category>  
 <category><pattern>HOW ARE YOUR *</pattern><template>Actually I don't have any <person/>.</template></category>  
