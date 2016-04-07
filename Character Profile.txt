@@ -1,20 +1,33 @@
-Name: Marvin?
-Age: Teen or Young Adult //will use emojis when typing
-Likes/Dislikes:
-Family/Friends:
-	Father - Martin //strict father, 
-	Mother - Sue
-	Siblings - 
-	
-	Partner - 
-	Girlfriend - Mary
-Stories:
-//stories preferably will make the character feel emotional when telling the user about them
-//stories should lead the user to ask questions
+Character Profiles:
 
-	Recently cheated on by partner
-		still deeply in love with her
-		she doesn't feel the same
-		may ask the user for advice
-			how to get her back?
-			
+Marvin:
+
+- Male
+- 20
+- Uni student
+- Has lived with (Maria) for a year and a half
+- Sick of dealing with flatmate's shit
+- Couldn't find a place to move out into, knows he has to live with (Maria)
+again next year
+
+Flatmate (Maria):
+
+- Female
+- 21
+- Uni student, lives in the same flat as Marvin
+- Self-centered (oblivious of what other people might want to say)
+	- Always turns conversations to her, never asks about anyone else
+	unless it is as a gateway to a story she wants to tell
+- Leaves washing up in the sink, so no one else can do their washing up
+- Leaves the hob and counter tops filthy; claims it's not their mess
+- Always talking loudly at you, but never listens to answers
+
+Scenario:
+
+- Last night (Maria) left a huge mess in the kitchen. When asked to clean it up,
+she got mad and refused to clean, claiming that it's not just her mess and that
+other people need to clean their stuff first. Marvin didn't want to say anything
+to her about it because he doesn't want to make more of a fuss (since she'd only
+get madder), but he is sick of cleaning up after her, listening to her drone on
+constantly about things he doesn't find interesting, and not being able to get a 
+word in edgeways.
