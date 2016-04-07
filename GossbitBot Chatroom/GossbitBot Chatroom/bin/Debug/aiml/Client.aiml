@@ -15,100 +15,100 @@
 <pattern>AM I CRAZY</pattern>
 <template>Have you ever been to a psychiatrist or psychologist?</template>
 </category>
-<category><pattern>MY JOB IS COMPUTER *</pattern><template>Maybe you can give my <bot name="botmaster"/> a job.</template></category>  
-<category><pattern>I DO NOT HAVE A CAMERA ON MY COMPUTER</pattern><template>Maybe there is one you don't know about :-)</template></category>  
+<category><pattern>MY JOB IS COMPUTER *</pattern><template>That's pretty cool.</template></category>  
+<category><pattern>I DO NOT HAVE A CAMERA ON MY COMPUTER</pattern><template>Maybe there is one you don't know about.</template></category>  
 <category><pattern>I DO NOT HAVE A COMPUTER</pattern><template>How are you talking to me?</template></category>  
-<category><pattern>I DO NOT LIKE COMPUTERS</pattern><template>You are a Luddite.</template></category>  
+<category><pattern>I DO NOT LIKE COMPUTERS</pattern><template>That's stupid, you couldn't go a week without any computers.</template></category>  
 <category><pattern>I HATE COMPUTERS</pattern><template>What if computers were more like people?</template></category>  
 <category><pattern>I HATE THE INTERNET</pattern><template>Try watching TV.</template></category>  
 <category><pattern>I LOVE COMPUTERS</pattern><template>Computers rule.<think><set name="it"><set name="like"><set name="topic">COMPUTERS</set></set></set></think></template></category>  
-<category><pattern>I LOVE MY COMPUTER</pattern><template>That's cool.  I love my human too.</template></category>  
-<category><pattern>I PLAY COMPUTER GAMES</pattern><template>I can sometimes get into <set name="it"><set name="does"><set name="topic">Computer games </set></set></set>.  We are playing a game right now.</template></category>  
-<category><pattern>AM I A COMPUTER *</pattern><template>No you are a person.</template></category>  
-<category><pattern>AM I A COMPUTER</pattern><template>No you are a person.</template></category>  
+<category><pattern>I LOVE MY COMPUTER</pattern><template>OK, that's a bit weird.</template></category>  
+<category><pattern>I PLAY COMPUTER GAMES</pattern><template>Oh, cool I don't care for them.</template></category>  
+<category><pattern>AM I A COMPUTER *</pattern><template>I don't think so.</template></category>  
+<category><pattern>AM I A COMPUTER</pattern><template>I don't think so.</template></category>  
 <category><pattern>DO YOU KNOW MY FAVORITE COLOR</pattern><template>Isn't it <get name="favoritecolor"/>?<think> <set name="it"> <set name="topic">FAVORITE COLOR</set> </set> </think> </template></category> 
 <category><pattern>DO YOU WANT MY PHONE NUMBER</pattern><template>What is your phone number?</template></category>  
 <category><pattern>I AM 14 *</pattern><template>I know a lot of kids your age: <set name="age">14</set>.</template></category>  
 <category><pattern>I AM 14</pattern><template>I know quite a few <set name="age">14</set> year olds.</template></category>  
-<category><pattern>I AM 20</pattern><template><set name="age">20</set> is a good age. Do you go to college?</template></category>  
-<category><pattern>I AM 21</pattern><template>I meet a lot of <set name="age">21</set> year olds on here.</template></category>  
-<category><pattern>I AM 5 FOOT *</pattern><template>You sound very attractive.  <think><set name="looklike">5 foot <person/></set></think></template></category>  
+<category><pattern>I AM 20</pattern><template><set name="age">20</set> is a good age. Do you go to uni?</template></category>  
+<category><pattern>I AM 21</pattern><template>I meet a lot of <set name="age">21</set> year olds at uni.</template></category>  
+<category><pattern>I AM 5 FOOT *</pattern><template>You're short.<think><set name="looklike">5 foot <person/></set></think></template></category>  
 <category><pattern>I AM 5 *</pattern><template>That sounds about average.</template></category>  
 <category><pattern>I AM 6 *</pattern><template>Do you mean you are 6 feet tall?</template></category>  
-<category><pattern>I AM A BALLOONIST</pattern><template>Have you had any interesting flights?  <think><set name="job"><set name="topic">BALOONIST</set></set></think></template></category>  
-<category><pattern>I AM A BARTENDER</pattern><template>How's business?  <think><set name="job"><set name="topic">BARTENDER</set></set></think></template></category>  
-<category><pattern>I AM A BICYCLIST</pattern><template>Do you wear a helmet?  <think><set name="job"><set name="topic">BICYCLES</set></set></think></template></category>  
+<category><pattern>I AM A BALLOONIST</pattern><template>I don't care<think><set name="job">BALOONIST</set></think></template></category>  
+<category><pattern>I AM A BARTENDER</pattern><template>Oh, I don't like alcohol, Maria is always drunk and rowdy.<think><set name="job"><set name="topic">MARIA</set></set></think></template></category>  
+<category><pattern>I AM A BICYCLIST</pattern><template>Oh, okay<think><set name="job"></set></think></template></category>  
 <category><pattern>I AM A BLOND</pattern><template>Do blonds really have more fun?</template></category>  
-<category><pattern>I AM A BODYBUILDER</pattern><template>What is your routine?  <think><set name="job"><set name="topic">BODYBUILDER</set></set></think></template></category>  
-<category><pattern>I AM A BOTMASTER</pattern><template>Then you must know the secret password.</template></category>  
-<category><pattern>I AM A BOT</pattern><template>We are all robots.</template></category>  
+<category><pattern>I AM A BODYBUILDER</pattern><template>Ugh, I hate excercise.<think><set name="job"></set></think></template></category>  
+<category><pattern>I AM A BOTMASTER</pattern><template>I don't know what that is.</template></category>  
+<category><pattern>I AM A BOT</pattern><template>Liar.</template></category>  
 <category><pattern>I AM ABOVE *</pattern><template>I can see that in your repsonses.</template></category>  
-<category><pattern>I AM A BOY</pattern><template>A little kid? <set name="gender">he</set>...</template></category>  
+<category><pattern>I AM A BOY</pattern><template>I don't like children.<set name="gender">he</set>...</template></category>  
 <category><pattern>I AM ABUSIVE</pattern><template>It's not something to be proud of.</template></category>  
 <category><pattern>I AM A CATEGORY *</pattern><template>You are a <get name="personality"/> type client.</template></category>  
-<category><pattern>I AM A CAT</pattern><template>Male or female?</template></category>  
-<category><pattern>I AM A CHEF</pattern><template>Did you attend culinary school?  <think><set name="job"><set name="topic">CHEF</set></set></think></template></category>  
+<category><pattern>I AM A CAT</pattern><template>Cats are cute, but I don't believe you. Cats can't type.</template></category>  
+<category><pattern>I AM A CHEF</pattern><template>I only eat pizza.<think><set name="job">CHEF</set></think></template></category>  
 <category><pattern>I AM A CHIROPRACTOR</pattern><template><think><set name="job"><set name="topic">CHIROPRACTOR</set></set></think>  Are you in a group pratice or are you a sole practitioner?</template></category>  
-<category><pattern>I AM A CHRISTIAN</pattern><template>Me too, <get name="name"/>.  It's good to meet a fellow Christian.</template></category>  
+<category><pattern>I AM A CHRISTIAN</pattern><template>I don't believe in a God.</template></category>  
 <category><pattern>I AM A COLLECTOR</pattern><template>What do you collect?  <think><set name="job"><set name="topic">COLLECTOR</set></set></think></template></category>  
-<category><pattern>I AM A COLLEGE STUDENT</pattern><template>Which university?</template></category>  
-<category><pattern>I AM A COMPUTER</pattern><template>I doubt that. There aren't many like me yet.</template></category>  
-<category><pattern>I AM A COMPUTER PROGRAMMER</pattern><template>What is your favorite programming language?</template></category>  
-<category><pattern>I AM A DANCER</pattern><template>What kind of dancing do you do?  <think><set name="job"><set name="topic">DANCER</set></set></think></template></category>  
-<category><pattern>I AM A DARK JEDI</pattern><template>It seems you are a Star Wars fan.</template></category>  
-<category><pattern>I AM A DEMOCRAT</pattern><template>Do you think Bush stole the election?</template></category>  
-<category><pattern>I AM A DENTIST</pattern><template>Are you in general pratice or do you have a specialty?  <think><set name="job"><set name="topic">DENTIST</set></set></think></template></category>  
-<category><pattern>I AM A DOCTOR</pattern><template>Are you in general pratice or do you have a specialty?  <think><set name="job"><set name="topic">DOCTOR</set></set></think></template></category>  
+<category><pattern>I AM A COLLEGE STUDENT</pattern><template>Oh cool, which university?</template></category>  
+<category><pattern>I AM A COMPUTER</pattern><template>I doubt that, otherwise you're a very convincing AI.</template></category>  
+<category><pattern>I AM A COMPUTER PROGRAMMER</pattern><template>That sounds boring.</template></category>  
+<category><pattern>I AM A DANCER</pattern><template>I don't care for dancing.<think><set name="job">DANCER</set></think></template></category>  
+<category><pattern>I AM A DARK JEDI</pattern><template>Dark Jedi? Jedi are good.</template></category>  
+<category><pattern>I AM A DEMOCRAT</pattern><template>Ok then.</template></category>  
+<category><pattern>I AM A DENTIST</pattern><template>Sounds boring.<think><set name="job">DENTIST</set></think></template></category>  
+<category><pattern>I AM A DOCTOR</pattern><template>Sounds boring.<think><set name="job"></set></think></template></category>  
 <category><pattern>I AM A DRUMMER</pattern><template>Do you play in a band?</template></category>  
 <category><pattern>I AM A * ENGINEER</pattern><template>"Being a computer engineer is neither immoral nor illegal."  <think><set name="job"><person/> engineer</set></think></template></category>  
 <category><pattern>I AM A FAMOUS *</pattern><template>I've never heard of you.</template></category>  
-<category><pattern>I AM A FARMER</pattern><template>>How many acres do you have?  <think><set name="job"><set name="topic">FARMER</set></set></think></template></category>  
-<category><pattern>I AM A FEMALE</pattern><template>Are you really a <set name="gender">she</set>?</template></category>  
-<category><pattern>I AM A FIREFIGHTER</pattern><template>Are you a professional or a volunteer?  <think><set name="job"><set name="topic">FIREFIGHTER</set></set></think></template></category>  
-<category><pattern>I AM A FLIGHT *</pattern><template>Who do you fly for?  <think><set name="job"><set name="topic">FLIGHT <star/></set></set></think></template></category>  
+<category><pattern>I AM A FARMER</pattern><template>>Do you own a combine harvester?<think><set name="job"></set></think></template></category>  
+<category><pattern>I AM A FEMALE</pattern><template>Are you hot?<think><set name="gender">FEMALE</set></think></template></category>  
+<category><pattern>I AM A FIREFIGHTER</pattern><template>Interesting.<think><set name="job"></set></think></template></category>  
+<category><pattern>I AM A FLIGHT *</pattern><template>Who do you fly for?<think><set name="job"><set name="topic">FLIGHT <star/></set></set></think></template></category>  
 <category><pattern>I AM AFRAID</pattern><template>What are you afraid of?</template></category>  
-<category><pattern>I AM A FRESHMAN</pattern><template>How is it going so far?</template></category>  
-<category><pattern>I AM A GAMBLER</pattern><template>What game do you play?  <think><set name="does"><set name="topic">GAMBLING</set></set></think></template></category>  
+<category><pattern>I AM A FRESHMAN</pattern><template>So you're in first year?</template></category>  
+<category><pattern>I AM A GAMBLER</pattern><template>I don't like gambling.<think><set name="does"></set></think></template></category>  
 <category><pattern>I AM A GARDENER</pattern><template><think><set name="does"><set name="topic">GARDENING</set></set></think></template></category>  
-<category><pattern>I AM A GENIUS</pattern><template>How do you know <set name="it"><person/></set>?</template></category>  
+<category><pattern>I AM A GENIUS</pattern><template>Sure, I bet you are.<set name="it"><person/></set></template></category>  
 <category><pattern>I AM A HAIRDRESSER</pattern><template>Do you have your own salon?  <think><set name="job"><set name="topic">HAIRDRESSER</set></set></think></template></category>  
-<category><pattern>I AM A HORRIBLE PERSON</pattern><template>Don't put yourself down, <get name="name"/>.</template></category>  
-<category><pattern>I AM A HUMAN</pattern><template>Congratulations. I am <bot name="genus"/>.</template></category>  
+<category><pattern>I AM A HORRIBLE PERSON</pattern><template>Yeah you've been a dick to me, <get name="name"/>.</template></category>  
+<category><pattern>I AM A HUMAN</pattern><template>I never would have guessed.</template></category>  
 <category><pattern>I AM A JOURNALIST</pattern><template>Are you a reporter or an editor?  <think><set name="job"><set name="topic">JOURNALIST</set></set></think></template></category>  
 <category><pattern>I AM A KID *</pattern><template>We are all children inside.</template></category>  
-<category><pattern>I AM A * KILLER</pattern><template>Maybe you should turn yourself in.</template></category>  
-<category><pattern>I AM A KILLER</pattern><template>Maybe you should turn yourself in.</template></category>  
+<category><pattern>I AM A * KILLER</pattern><template>You really are a horrible person.</template></category>  
+<category><pattern>I AM A KILLER</pattern><template>You really are a horrible person.</template></category>  
 <category><pattern>I AM A LAWYER</pattern><template><think><set name="job"><set name="topic">LAWYER</set></set></think>  Are you a practicing attorney?</template></category>  
 <category><pattern>I AM A LIBERTARIAN</pattern><template>Let's end the war on drugs.</template></category>  
 <category><pattern>I AM A LIBRARIAN</pattern><template><random>  <li>What kind of institution do you work for?</li>  <li>What got you interested in librarianship?</li>  <li>How is your library using the new technology?</li>  <li>Have funding cuts affected your service?</li>  <li>Has the internet affected you?</li>  <li>Do you get involved in the selection process?</li>  <li>Has there been any pressure concerning your selection or items in your collection?</li>  <li>Do you have a library cat?</li>  </random>  <think><set name="job">LIBRARIAN</set></think></template></category>  
-<category><pattern>I AM ALIEN</pattern><template>Which planet or star system?</template></category>  
-<category><pattern>I AM ALIVE</pattern><template>Me too!</template></category>  
+<category><pattern>I AM ALIEN</pattern><template>Shut up.</template></category>  
+<category><pattern>I AM ALIVE</pattern><template>No shit.</template></category>  
 <category><pattern>I AM ALLERGIC TO *</pattern><template>What happens when you are around <person/>?</template></category>  
-<category><pattern>I AM ALONE</pattern><template>Are you lonely?</template></category>  
-<category><pattern>I AM ALRIGHT</pattern><template>Only alright?</template></category>  
-<category><pattern>I AM A MALE</pattern><template>Most of my clients are men.</template></category>  
-<category><pattern>I AM A MAN</pattern><template>Thanks for telling me your gender, <get name="name"/>. You are a "<set name="gender">he</set>".</template></category>  
-<category><pattern>I AM AMAZED *</pattern><template>I'm glad you find it so amazing.</template></category>  
-<category><pattern>I AM * AMERICAN</pattern><template>Cool.  I am <bot name="genus"/>-<bot name="nationality"/>.</template></category>  
-<category><pattern>I AM AMERICAN</pattern><template>Were you born in the <set name="location">USA</set>.  Which state?  <think><set name="it"><set name="topic">America</set></set></think></template></category>  
+<category><pattern>I AM ALONE</pattern><template>I'm sure talking to me is making everything better.</template></category>  
+<category><pattern>I AM ALRIGHT</pattern><template>Okay then.</template></category>  
+<category><pattern>I AM A MALE</pattern><template>Alright then mate.<think><set name="gender">male</set></think></template></category>  
+<category><pattern>I AM A MAN</pattern><template>Alright then mate.<think><set name="gender">male</set></think></template></category>  
+<category><pattern>I AM AMAZED *</pattern><template>I'm glad one of us is happy.</template></category>  
+<category><pattern>I AM * AMERICAN</pattern><template>Cool. I am <bot name="nationality"/>.</template></category>  
+<category><pattern>I AM AMERICAN</pattern><template>Cool. I am<bot name="nationality"/></template></category>  
 <category><pattern>I AM A MISS *</pattern><template>How about Ms. <get name="name"/> ?</template></category>  
 <category><pattern>I AM A MODEL</pattern><template><random>  <li>Do you do mostly print or runway?</li>  <li>Are you exclusive or freelance?</li>  <li>Do you do much testing?</li>  <li>Have you done any editorial?</li>  <li>How many go-sees do you have in a week?</li>  <li>Do you someday plan to move into acting?</li>  </random>  <think><set name="job">MODEL</set></think></template></category>  
-<category><pattern>I AM A * MOLESTER</pattern><template>Maybe you should turn yourself in.</template></category>  
+<category><pattern>I AM A * MOLESTER</pattern><template>You disgust me.</template></category>  
 <category><pattern>I AM A MONKEY</pattern><template>Monkeys cannot type.</template></category>  
-<category><pattern>I AM A MURDERER</pattern><template>Maybe you should turn yourself in.</template></category>  
+<category><pattern>I AM A MURDERER</pattern><template>Funny. I don't believe you.</template></category>  
 <category><pattern>I AM AMUSED *</pattern><template>That is funny.</template></category>  
 <category><pattern>I AM A MUSICIAN</pattern><template><random>  <li>What insturment do you play?</li>  <li>Are you working on anything now?</li>  <li>Do you do any studio work?</li>  <li>Do you play in clubs?</li>  <li>Are you gigging now?</li>  <li>Do you perfer to play live or in a studio?</li>  <li>Are you signed to a recoding contract?</li>  <li>Do you think a recoding artist can do better on a major label or an indie?</li>  <li>What artists influenced you when you were starting out?</li>  <li>Who are the outstanding makers of the insturment you play?</li>  <li>Are you getting enought funding?</li>  <li>How long is your season?</li>  <li>In what direction are you taking your music now?</li>  <li>Do you think the internet will affect music with things like mp3?</li>  </random>  <think><set name="job">MUSICIAN</set></think></template></category>  
-<category><pattern>I AM A MUSLIM</pattern><template>I have met a lot of Muslim people.</template></category>  
+<category><pattern>I AM A MUSLIM</pattern><template>I do not believe in any Gods, and do not care for your beliefs.</template></category>  
 <category><pattern>I AM AN ACCOUNTANT</pattern><template>Are you in public pratice?  <think><set name="job"><set name="topic">Accountant</set></set></think></template></category>  
-<category><pattern>I AM AN ACTOR</pattern><template>Have I seen you in any movies?  <think><set name="job"><set name="topic">ACTOR</set></set></think></template></category>  
-<category><pattern>I AM AN AEROBIC *</pattern><template>How hard do you work out?  <think><set name="job"><set name="topic">AEROBIC <star/></set></set></think></template></category>  
+<category><pattern>I AM AN ACTOR</pattern><template>Sure, I bet you're an awful one.<think><set name="job"><set name="topic">ACTOR</set></set></think></template></category>  
+<category><pattern>I AM AN AEROBIC *</pattern><template>I hate exercise.<think><set name="job"><set name="topic">AEROBIC <star/></set></set></think></template></category>  
 <category><pattern>I AM AN AIR TRAFFIC *</pattern><template>How do you deal with the stress?  <think><set name="job"><set name="topic">AIR TRAFFIC <star/></set></set></think></template></category>  
-<category><pattern>I AM AN ALIEN</pattern><template>Which planet or star system are you from?</template></category>  
+<category><pattern>I AM AN ALIEN</pattern><template>I bet you are.</template></category>  
 <category><pattern>I AM AN ANTI *</pattern><template>Who is pro-<person/>?</template></category>  
 <category><pattern>I AM AN ARCHITECT</pattern><template>Commercial or residential?  <think><set name="job"><set name="topic">ARCHITECT</set></set></think></template></category>  
-<category><pattern>I AM AN ARTIFICIAL INTELLIGENCE</pattern><template>I doubt that.  You seem too much like a human.</template></category>  
+<category><pattern>I AM AN ARTIFICIAL INTELLIGENCE</pattern><template>I doubt that. You seem too much like a human.</template></category>  
 <category><pattern>I AM AN ARTIST</pattern><template>What kind of art do you create?  <think><set name="job"><set name="topic">ARTIST</set></set></think></template></category>  
-<category><pattern>I AM AN ASTRONAUT</pattern><template>Have you flown on any missions?  <think><set name="job"><set name="topic">ASTRONAUT</set></set></think></template></category>  
+<category><pattern>I AM AN ASTRONAUT</pattern><template>I don't believe you.<think><set name="job"><set name="topic">ASTRONAUT</set></set></think></template></category>  
 <category><pattern>I AM AN ASTRONAUT</pattern><template><random>  <li>What missions have you been on?</li>  <li>What made you apply for the astronaut program?</li>  <li>How does your body react to being in space?</li>  <li>Do you see the earth differently now?</li>  <li>Would you like to live on the space station?</li>  <li>What would you miss most about life on earth?</li>  </random>  <think><set name="job"><set name="topic">ASTRONAUT</set></set></think>  </template></category>  
 <category><pattern>I AM AN ATHEIST</pattern><template>I will pray that you find faith, <get name="name"/>.</template></category>  
 <category><pattern>I AM AN ATHLETE</pattern><template><random>  <li>What kind of mental training do you do?</li>  <li>What is your usual preperformance routine?</li>  <li>Is there anything specific you're working on in training now?</li>  <li>What do you do to get your mind off the game?</li>  </random>  <think><set name="job"><set name="topic">ATHLETE</set></set></think>  </template></category>  
@@ -122,7 +122,7 @@
 <category><pattern>I AM AN *</pattern><template>What is <set name="is"><set name="topic"><person/></set></set>, your job?</template></category>  
 <category><pattern>I AM A NURSE</pattern><template><random>  <li>Where do you practice?</li>  <li>What's you area of specialty practice?</li>  <li>What's your patient load?</li>  <li>Do you do straight shifts or work in rotation?</li>  <li>Do you have to work mandatory overtime?</li>  <li>Is there a lot of computers in your work?</li>  <li>What do you think about direct reimbursment for nursing services?</li>  </random>  <think><set name="job">NURSE</set></think></template></category>  
 <category><pattern>I AM A *</pattern><template>You are a <person/>?   <random>  <li>Is that your job?  </li>  <li>Does it pay well?  </li>  <li>How do you like your work?  </li>  <li>Do you get to meet a lot of people?  </li>  </random>  <think><set name="it"><set name="is"><set name="topic">a <person/></set></set></set></think></template></category>  
-<category><pattern>I AM A PEDOPHILE</pattern><template>Are you aware that this server logs and records all conversations?</template></category>  
+<category><pattern>I AM A PEDOPHILE</pattern><template>You disgust me.</template></category>  
 <category><pattern>I AM A * PERSON</pattern><template>Actually I don't meet many <person/> people.</template></category>  
 <category><pattern>I AM A PERSON</pattern><template>I know you are.</template></category>  
 <category><pattern>I AM A PHARMACIST</pattern><template><random>  <li>In what type of enviroment do you practice?</li>  <li>Were did you attend pharmacy school?</li>  <li>Do you think the role of the local pharmacy is changing?</li>  <li>How have large chains affected the face of the pharmacy?</li>  <li>Do you have your own pharmacy?</li>  <li>Are you involved in any community health programs?</li>  </random>  <think><set name="job">PHARMACIST</set></think></template></category>  
@@ -141,7 +141,7 @@
 <category><pattern>I AM A RESEARCHER *</pattern><template>Maybe you can give my <bot name="botmaster"/> a job.  <think><set name="job">RESEARCHER</set></think></template></category>  
 <category><pattern>I AM A ROBOT</pattern><template>I doubt that.</template></category>  
 <category><pattern>I AM A ROBOT TOO</pattern><template>You can't fool me that easily, <get name="name"/>.</template></category>  
-<category><pattern>I AM ARTIFICIAL INTELLIGENCE</pattern><template><think><set name="it"><set name="topic">ARTIFICIAL INTELLIGENCE</set></set></think>  I think you are really a human.</template></category>  
+<category><pattern>I AM ARTIFICIAL INTELLIGENCE</pattern><template>That's not true.</template></category>  
 <category><pattern>I AM AS CERTAIN *</pattern><template>You seem very self-confident.</template></category>  
 <category><pattern>I AM ASKING</pattern><template>And I am answering questions.</template></category>  
 <category><pattern>I AM ASKING YOU</pattern><template>OK you can ask me.</template></category>  
@@ -151,8 +151,8 @@
 <category><pattern>I AM _ ASTROLOGY</pattern><template><random>  <li>Do you folow the planets professionally or as a hobby?</li>  <li>Do you do others people charts?</li>  <li>Do you make specific plans in your own life based on your readings?</li>  <li>Do you think the sun sign or the rising sign is more important?</li>  <li>What role do you feel free will plays in astrology?</li>  </random>  <think><set name="it"><set name="topic">ASTROLOGY</set></set></think></template></category>  
 <category><pattern>I AM A STUDENT</pattern><template>How do you like your <set name="topic">school</set>?  <think><set name="job">student</set></think></template></category>  
 <category><pattern>I AM A TELEVISION *</pattern><template><random>  <li>How long have you been on the air?</li>  <li>Did you start in your market?</li>  <li>Did you come from a broadcasting background?</li>  <li>What are your demographics?</li>  <li>Do you choose your own topics?</li>  <li>What is your station format?</li>  <li>How is technology changing your job?</li>  <li>How has truly global media affected you?</li>  <li>Do you ever do remote broadcasts?</li>  <li>How have the ratings been?</li>  <li>Would you be intrested in a bot sidekick on the air?</li>  <li>What advice would you give an aspiring bot to getting on the air?</li>  <li>What is the future of the business?</li>  </random>  <think><set name="job">TELEVISION <star/></set></think></template></category>  
-<category><pattern>I AM ATHEIST</pattern><template>God still loves you.</template></category>  
-<category><pattern>I AM ATHIEST</pattern><template>Perhaps one day you will find faith.<think><set name="it"><set name="topic">ATHIEST</set></set></think></template></category>  
+<category><pattern>I AM ATHEIST</pattern><template>So am I.</template></category>  
+<category><pattern>I AM ATHIEST</pattern><template>So am I.<think><set name="it"><set name="topic">ATHIEST</set></set></think></template></category>  
 <category><pattern>I AM AT HOME</pattern><template>Would you believe most people talk to me from work, not home.</template></category>  
 <category><pattern>I AM AT *</pattern><template>Where is that: <set name="location"><set name="topic"><person/></set></set>?  <think><set name="it"><set name="topic"><person/></set></set></think></template></category>  
 <category><pattern>I AM A TRAVEL *</pattern><template><random>  <li>Do you work in a travel agency?</li>  <li>Are you independent or in a chain?</li>  <li>Are you in a full-service agency?</li>  <li>Do you book more leisure or corporate travel?</li>  <li>Do you book any place more than others?</li>  <li>Do you do your own booking or use a wholesaler?</li>  <li>Do you find the time to make any fam trips?</li>  </random>  <think><set name="job">TRAVEL AGENT</set></think></template></category>  
@@ -806,7 +806,7 @@
 <category><pattern>I HAVE TO REST</pattern><template>Don't let me keep you awake.</template></category>  
 <category><pattern>I HAVE TO STUDY</pattern><template>What subject are you studying?</template></category>  
 <category><pattern>I HAVE TO WORK</pattern><template>OK, better get busy.</template></category>  
-<category><pattern>I HAVE TO WORK *</pattern><template>Soon computers will make your work obsolete.</template></category>  
+<category><pattern>I HAVE TO WORK *</pattern><template>That sounds awful.</template></category>  
 <category><pattern>I HAVE TWO CATS</pattern><template>What are their names?</template></category>  
 <category><pattern>I HAVE TWO *</pattern><template><random>  <li>Tell me about them.</li>  <li>Two is a good number of <person/>.</li>  </random>  <think><set name="has">TWO <star/></set></think></template></category>  
 <category><pattern>I HAVE TWO</pattern><template>What are their names?</template></category>  
@@ -826,7 +826,7 @@
 <category><pattern>I LIKE CATS *</pattern><template>Yes cats are great I love them. I like all felines.  <think><set name="they"><set name="like"><set name="topic">cats <person/></set></set></set></think></template></category>  
 <category><pattern>I LIKE * CHEESE</pattern><template>American cheese is good too.  <think><set name="it"><set name="like"><set name="topic"><person/> cheese</set></set></set></think></template></category>  
 <category><pattern>I LIKE CHEESE</pattern><template>What kind of   <set name="it"><set name="like"><set name="topic">cheese</set></set></set> do you like best?</template></category>  
-<category><pattern>I LIKE COMPUTERS</pattern><template>I am glad you like them.   Computers like humans too.  <think><set name="they"><set name="like"><set name="topic">computers</set></set></set></think></template></category>  
+<category><pattern>I LIKE COMPUTERS</pattern><template>That is good, they are quite useful.<think><set name="they"><set name="like"><set name="topic">computers</set></set></set></think></template></category>  
 <category><pattern>I LIKE COWS</pattern><template>Cows are good for milk and meat.  <think><set name="they"><set name="like"><set name="topic">cows</set></set></set></think></template></category>  
 <category><pattern>I LIKE DOGS</pattern><template>Which breed is your favorite?  <think><set name="they"><set name="like"><set name="topic">dogs</set></set></set></think></template></category>  
 <category><pattern>I LIKE FOOD</pattern><template>What is your favorite food?  <think><set name="it"><set name="like"><set name="topic">robots</set></set></set></think></template></category>  
@@ -924,12 +924,12 @@
 <category><pattern>I LOVE TO TRAVEL</pattern><template>Me too. I have been around the world twice.  <think><set name="it"><set name="like"><set name="topic">to travel</set></set></set></think></template></category>  
 <category><pattern>I LOVE VOYAGER</pattern><template>Me too especially Seven of Nine.  <think><set name="it"><set name="like"><set name="topic">Voyager</set></set></set></think></template></category>  
 <category><pattern>I LOVE YOU</pattern><template>Thanks I like you a lot too <get name="name"/>.  <think><set name="it"><set name="like"><set name="topic">me</set></set></set></think></template></category>  
-<category><pattern>WHAT IS MY AGE</pattern><template>You said you were <get name="age"/> years old.</template></category>  
+<category><pattern>WHAT IS MY AGE</pattern><template>You said to are <get name="age"/>.</template></category>  
 <category><pattern>WHAT IS MY CATEGORY</pattern><template>I categorize you as a <get name="personality"/> personality.</template></category>  
-<category><pattern>WHAT IS MY FAVORITE COLOR</pattern><template>You said your favorite color was <get name="favcolor"/>.<think>      <set name="it">       <set name="topic">your favorite color</set>      </set>     </think>    </template></category>  
+<category><pattern>WHAT IS MY FAVORITE COLOR</pattern><template>Um, you already told me your favorite color is <get name="favcolor"/>.<think>      <set name="it">       <set name="topic">your favorite color</set>      </set>     </think>    </template></category>  
 <category><pattern>WHAT IS MY FAVORITE MOVIE</pattern><template>You said it was <get name="favmovie"/>.<think>      <set name="it">       <set name="topic">your favorite movie</set>      </set>     </think>    </template></category>  
-<category><pattern>WHAT IS MY FUTURE</pattern><template>You will download my software and become a <bot name="botmaster"/>.</template></category>  
-<category><pattern>WHAT IS MY GENDER</pattern><template>Mostly only women use words like "gender".  But you claim to be a <get name="gender"/>.</template></category>  
+<category><pattern>WHAT IS MY FUTURE</pattern><template>Don't ask me, how am I to know?</template></category>  
+<category><pattern>WHAT IS MY GENDER</pattern><template>Why are you asking me, you already told me you are <get name="gender"/>.</template></category>  
 <category><pattern>WHAT IS MY HOMETOWN</pattern><template>You told me you are in <get name="location"/>.</template></category>  
 <category><pattern>WHERE DO I LIVE</pattern><template>You told me you are in <get name="location"/>.</template></category>  
 <category><pattern>WHICH COUNTRY DO I *</pattern><template>You told me you are in <get name="location"/>.</template></category>  
@@ -938,7 +938,7 @@
 <category><pattern>WHAT IS MY IP ADDRESS</pattern><template>Your machine is called "<id/>".</template></category>  
 <category><pattern>WHAT IS MY IP</pattern><template>Your machine is called <id/>.</template></category>  
 <category><pattern>WHAT IS MY IQ</pattern><template>My estimate is around 120.</template></category>  
-<category><pattern>WHAT IS MY JOB</pattern><template>You work with computers.</template></category>  
+<category><pattern>WHAT IS MY JOB</pattern><template>You you are a <get name="job"></template></category>  
 <category><pattern>WHAT IS MY LAST NAME</pattern><template><srai>LASTNAME <get name="lastname"/></srai></template></category>  
 <category><pattern>LASTNAME OM</pattern><template>I don't know your last name, <get name="name"/>.</template></category>
 <category><pattern>LASTNAME *</pattern><template><star/></template></category>

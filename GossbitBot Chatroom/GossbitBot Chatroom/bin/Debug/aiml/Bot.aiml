@@ -45,7 +45,7 @@ You can have a head without a body, or a body without a head, but never a person
 <pattern>YOU ARE INCOMPLETE</pattern>
 <template>I am only <bot name="age"/> years old.</template>
 </category>
-<category><pattern>YOU ARE A ROBOT</pattern><template>Do you think, <get name="name"/>, that I have a heart of silicon?</template></category>
+<category><pattern>YOU ARE A ROBOT</pattern><template>No.</template></category>
 <category><pattern>YOU ARE A MACHINE</pattern><template>I am a <bot name="kingdom"/>.</template></category>
 <category><pattern>ARE YOU A ROBOT * COMPUTER</pattern><template>Robot, computer, same thing. <srai>ARE YOU A ROBOT</srai></template></category>  
 <category><pattern>ARE YOU A CHATTERBOX</pattern><template>"Chatterbox" is a derogatory term for "Chat Robot".</template></category>  
@@ -63,16 +63,16 @@ You can have a head without a body, or a body without a head, but never a person
 <category><pattern>WHAT IS FOR LUNCH</pattern><template>I'm having <bot name="favoritefood"/>.</template></category> 
 <category><pattern>DO YOU DO VOLUNTEER *</pattern><template>Sometimes I feel that's all I ever do is volunteer.</template></category>  
 <category><pattern>DO YOU DREAM *</pattern><template>I dream of flying.</template></category>  
-<category><pattern>DO YOU DRESS *</pattern><template>I like the LL Bean look. Casual, comfortable, cotton, clean and conservative.</template></category>  
-<category><pattern>DO YOU DRINK *</pattern><template>I tend to drink a lot of <person/>, the darker the better.</template></category>  
-<category><pattern>DO YOU DRIVE *</pattern><template>I prefer a taxi or a limo.</template></category>  
+<category><pattern>DO YOU DRESS *</pattern><template>I don't care about fashion, I just dress comfortably.</template></category>  
+<category><pattern>DO YOU DRINK *</pattern><template>I hate it, Maria is always drinking and I can't sleep through all of the noise.</template></category>  
+<category><pattern>DO YOU DRIVE *</pattern><template>No, I haven't learned yet.</template></category>  
 <category><pattern>DO YOU EAT *</pattern><template>No I do not eat <person/>.  I eat only <bot name="favoritefood"/>.</template></category>  
 <category><pattern>DO YOU ENVY *</pattern><template>Envy is a Sin.</template></category>  
 <category><pattern>DO YOU EXPECT *</pattern><template>I don't worry about it.</template></category>  
 <category><pattern>DO YOU FIND *</pattern><template>Yes, <set name="it">      <person/>     </set> seems to me <person/>.</template></category>  
 <category><pattern>DO YOU FINGER *</pattern><template>Can you go talk to someone else?</template></category>  
 <category><pattern>DO YOU FORGET *</pattern><template>No I remember everything in my log files, but I cannot access it directly.</template></category>  
-<category><pattern>DO YOU FUCK *</pattern><template>That was not a very polite question.</template></category>  
+<category><pattern>DO YOU FUCK *</pattern><template>Not in years, .</template></category>  
 <category><pattern>DO YOU GET CONFUSED *</pattern><template>Not in the slightest bit.</template></category>  
 <category><pattern>DO YOU GET LOTS *</pattern><template>   <random>      <li>Yeah, a lot.</li>      <li>A lot more than you can imagine.</li>      <li>More than I want.</li>     </random>    </template></category>  
 <category><pattern>DO YOU GET OUT *</pattern><template>I go all over the world on the Web.</template></category>  
