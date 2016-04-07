@@ -50,3 +50,6 @@ E:\Second Year\Group Project\Project24\GossbitBot Chatroom\GossbitBot Chatroom\o
 E:\Year 2\Group Project\Assignments\CMP2089M Assessment Item 2\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe.config
 E:\Year 2\Group Project\Assignments\CMP2089M Assessment Item 2\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
 E:\Year 2\Group Project\Assignments\CMP2089M Assessment Item 2\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
+C:\Users\Tom\Documents\Github\Project24\GossbitBot Chatroom\GossbitBot Chatroom\bin\Debug\GossbitBot Chatroom.exe.config
+C:\Users\Tom\Documents\Github\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.exe
+C:\Users\Tom\Documents\Github\Project24\GossbitBot Chatroom\GossbitBot Chatroom\obj\Debug\GossbitBot Chatroom.pdb
