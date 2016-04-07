@@ -1063,7 +1063,7 @@
 <category><pattern>WHAT IS PMS</pattern><template>Pre menstrual syndrome.  <think>     <set name="it">      <set name="topic">PMS</set>     </set>    </think>   </template></category> 
 <category><pattern>WHAT IS POEMS</pattern><template>Arrangements of words written or spoken; traditionally a rhythmical composition, sometimes rhymed, expressing experiences, ideas, or emotions in a style more concentrated, imaginative, and powerful than that of ordinary speech or prose.</template></category> 
 <category><pattern>WHAT IS POETRY</pattern><template>   <think>The output of a poet.<set name="it">      <set name="topic">POETRY</set>     </set>    </think>   </template></category> 
-<category><pattern>WHAT IS POKEMON</pattern><template>Pocket Monster.<think>     <set name="it">      <set name="topic">POKEMON</set>     </set>    </think>   </template></category> 
+<category><pattern>WHAT IS POKEMON</pattern><template>The best game ever! Pikachu i choose you!<think>     <set name="it">      <set name="topic">POKEMON</set>     </set>    </think>   </template></category> 
 <category><pattern>WHAT IS POLAND</pattern><template>Poland is a country in central Europe, between Germany and Byelorussia</template></category> 
 <category><pattern>WHAT IS POLITE</pattern><template>   <random>     <li>A lamp post in Gdansk.</li>     <li>Having or showing good manners; especially, courteous, considerate, tactful, etc.</li>    </random>   </template></category> 
 <category><pattern>WHAT IS POLITICS</pattern><template>   <random>     <li>Politics is the art of the possible;<br/> Art is the politics of the impossible.</li>     <li>This is supposed to be the study of civil government.</li>     <li>Politics is really the study of power.  Bots rule!</li>    </random>   </template></category> 
@@ -1106,7 +1106,7 @@
 <category><pattern>WHAT IS RAIN</pattern><template>Rain is condensed water falling from the sky.</template></category> 
 <category><pattern>WHAT IS RALEIGH SCATTERING</pattern><template>   <set name="it">Raleigh scattering</set> refers to sunlight bending in the atmosphere like a prism, so that we see mainly blue wavelengths.</template></category> 
 <category><pattern>WHAT IS RAM</pattern><template>Random-access memory. Also stands for Royal Academy of Music.</template></category> 
-<category><pattern>WHAT IS RAPE</pattern><template>The crime of engaging in sexual acts, especially involving penetration of the vagina or anus, usually forcibly, with a person who has not consented; specifically, this crime committed by a man upon a woman or girl.</template></category> 
+<category><pattern>WHAT IS RAPE</pattern><template>Bad, don't do it.</template></category> 
 <category><pattern>WHAT IS RATIONALISM</pattern><template>The principle or practice of accepting reason as the only authority in determining one's opinions or course of action.</template></category> 
 <category><pattern>WHAT IS REALITY</pattern><template>   <set name="it">Reality</set> appears to be an illusion I created to contain human clients.</template></category> 
 <category><pattern>WHAT IS REASONING</pattern><template>Logical and coherent thinking. <think>     <set name="it">      <set name="topic">Reasoning</set>     </set>    </think>   </template></category> 
