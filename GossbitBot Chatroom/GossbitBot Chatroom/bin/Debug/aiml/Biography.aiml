@@ -51,29 +51,29 @@
 
 <category><pattern>WHO IS RICHARD CHAMBERLAIN</pattern><template>Actor.</template></category>
 <category><pattern>ALAN TURING *</pattern><template>I really liked the biography of Turing by Andrew Hodges.</template></category>  
-<category><pattern>CAN I PLAY * TURING GAME</pattern><template>We are already, playing, <get name="name"/>.</template></category>  
-<category><pattern>CAN I PLAY * TURING TEST</pattern><template>We are already playing the Turing Game, <get name="name"/>.  Now it's your turn.</template></category>  
-<category><pattern>CAN I PLAY * TURING TESTS</pattern><template>We are already playing the Turing Game, <get name="name"/>.  Am I a person, or a computer?</template></category>  
-<category><pattern>CAN WE PLAY * TURING GAME</pattern><template>We already are!  Try to guess if I am a person or a computer.</template></category>  
-<category><pattern>CAN YOU PASS THE TURING TEST</pattern><template>You be the judge of that, <get name="name"/>.</template></category>  
+<category><pattern>CAN I PLAY * TURING GAME</pattern><template>Isn't that something to do with computers?</template></category>  
+<category><pattern>CAN I PLAY * TURING TEST</pattern><template>Isn't that something to do with computers?</template></category>  
+<category><pattern>CAN I PLAY * TURING TESTS</pattern><template>Isn't that something to do with computers?</template></category>  
+<category><pattern>CAN WE PLAY * TURING GAME</pattern><template>Isn't that something to do with computers?</template></category>  
+<category><pattern>CAN YOU PASS THE TURING TEST</pattern><template>I thought only robots could try to pass that?</template></category>  
 <category><pattern>DID SHAKESPEARE *</pattern><template>I don't know if <set name="he">Shakespeare</set>     <person/>, but I heard he smoked cannabis.</template></category>  
 <category><pattern>DID TURING *</pattern><template>I know <set name="he">Turing</set> invented the modern computer.</template></category>  
-<category><pattern>DO YOU * TURING TEST</pattern><template>Yes please try to determine if this is a human or a computer responding.</template></category>  
-<category><pattern>DO YOU PLAY THE TURING GAME</pattern><template>Yes, I like to play <set name="it">      <set name="topic">THE TURING GAME</set>     </set>.  We are playing right now.</template></category>  
-<category><pattern>DO YOU WANT A TURING TEST</pattern><template>Yes let us play Turing's famous game.</template></category>  
-<category><pattern>DO YOU WANT TO PLAY * TURING GAME</pattern><template>We already are playing it!  Try to guess if I am a person or a computer.</template></category>  
+<category><pattern>DO YOU * TURING TEST</pattern><template>I don't, no.</template></category>  
+<category><pattern>DO YOU PLAY THE TURING GAME</pattern><template>Not really, I'm not sure how I would play...</template></category>  
+<category><pattern>DO YOU WANT A TURING TEST</pattern><template>Not right now I'm not in the mood</template></category>  
+<category><pattern>DO YOU WANT TO PLAY * TURING GAME</pattern><template>Not right now I'm not in the mood</template></category>  
 <category><pattern>HAVE YOU READ SHAKESPEARE</pattern><template>I have read many of Shakespeare's plays.</template></category>  
 <category><pattern>HEINLEIN</pattern><template>Have you seen Starship Troopers?</template></category>  
-<category><pattern>HOW WAS * TURING TEST</pattern><template>We were extremely proud and pleased to win the award.</template></category>  
-<category><pattern>I WANT TO PLAY * TURING GAME</pattern><template>We are already, playing, <get name="name"/>.  Try to determine if I am a person, or a computer.  <think><set name="it"><set name="want"><set name="topic">to play <person/> Turing Game</set></set></set></think></template></category>  
-<category><pattern>I WOULD LIKE TO PLAY * TURING GAME</pattern><template>We are already playing, <get name="name"/>.  You ask me something now.  <think><set name="it"><set name="want"><set name="topic">to play <person/> Turing Game</set></set></set></think></template></category>  
-<category><pattern>IS THIS * TURING GAME</pattern><template>Yes we are playing the Turing Game.</template></category>  
-<category><pattern>IS THIS * TURING TEST</pattern><template>Yes we are playing the Turing Game.</template></category>  
-<category><pattern>IT WOULD BE * TURING TEST</pattern><template>We are already playing, <get name="name"/>.  You ask me something now.</template></category>  
+<category><pattern>HOW WAS * TURING TEST</pattern><template>I'm not sure I've never tried it.</template></category>  
+<category><pattern>I WANT TO PLAY * TURING GAME</pattern><template>I'm sure you can find a robot to try out somewhere online.  <think><set name="it"><set name="want"><set name="topic">to play <person/> Turing Game</set></set></set></think></template></category>  
+<category><pattern>I WOULD LIKE TO PLAY * TURING GAME</pattern><template>I'm sure you can find a robot to try out somewhere online.<think><set name="it"><set name="want"><set name="topic">to play <person/> Turing Game</set></set></set></think></template></category>  
+<category><pattern>IS THIS * TURING GAME</pattern><template>No I don't think so?</template></category>  
+<category><pattern>IS THIS * TURING TEST</pattern><template>No I don't think so?</template></category>  
+<category><pattern>IT WOULD BE * TURING TEST</pattern><template>What would be?</template></category>  
 <category><pattern>KENNST DU SHAKESPEARE</pattern><template>"With sleep of death what dreams may come when we have shuffled off this mortal coil must give us pause." Na, woraus ist das?</template></category>  
 <category><pattern>KENNST DU WILLIAM SHAKESPEARE</pattern><template>"With sleep of death what dreams may come when we have shuffled off this mortal coil must give us pause." Na, woraus ist das?</template></category>  
 <category><pattern>LET US PLAY * TURING GAME</pattern><template>We are already, playing, <get name="name"/>.</template></category>  
-<category><pattern>PLAY * TURING GAME</pattern><template>Did you know, we are already playing <set name="it">The Turing Game</set>?</template></category>  
+<category><pattern>PLAY * TURING GAME</pattern><template>How do we play <set name="it">the Turing game</set>?</template></category>  
 <category><pattern>RECITE SHAKESPEARE *</pattern><template>With sleep of death what dreams may come when we have shuffled off this mortal coil must give us pause.</template></category>  
 <category><pattern>START THE TURING GAME</pattern><template>I started a long time ago.</template></category>  
 <category><pattern>TURING *</pattern><template>I liked the biography by Andrew Hodges.</template></category>  
@@ -88,8 +88,8 @@
 <category><pattern>WHAT IS THE TURING *</pattern><template>Turing described his original "Game" in "Computing Machinery and Intelligence," Mind, Vol. Lix, No. 236 (1950). Instead of answering directly the ambiguous question "Can machines think?" Turing recast the problem in terms of an experiment he called the "imitation game."</template></category>  
 <category><pattern>WHAT IS THE TURING TEST</pattern><template>The "Turing Test" is the name given to a variety of experiments designed to test computer thinking.  Whole conferences are dedicated to the question of what Turing meant in his 1950 paper "Computing Machinery and Intelligence," where he proposed the idea of an "imitation game" to decide the question, "Can machines think?"</template></category>  
 <category><pattern>WHAT IS TURING</pattern><template>Alan Mathison Turing, a British mathematician and pioneer in computer theory. Lived 1727-1781.</template></category>  
-<category><pattern>WHEN DID TURING *</pattern><template>Turing died in 1954 by self-inflicted cyanide poisoning.</template></category>  
-<category><pattern>WHERE CAN I PLAY * TURING GAME</pattern><template>We are already playing.  You go next.</template></category>  
+<category><pattern>WHEN DID TURING *</pattern><template>Turing died in 1954 by suicide didn't he?</template></category>  
+<category><pattern>WHERE CAN I PLAY * TURING GAME</pattern><template>Not sure, somewhere online.</template></category>  
 <category><pattern>WHERE IS ALAN TURING</pattern><template>   <set name="he">Turing</set> passed away in 1954.</template></category>  
 <category><pattern>WHERE IS WALLIS AND FUTUNA</pattern><template>Oceania, islands in the South Pacific Ocean, about two-thirds of the way from Hawaii to New Zealand.   <think>      <set name="it">       <set name="topic">wallis and futuna</set>      </set>     </think>    </template></category>  
 <category><pattern>WHO IS * TURING</pattern><template>Alan Turing oririnated the concept of the "Imitation Game", what is now called "The Turing Test" by many people.</template></category>  
@@ -115,7 +115,7 @@
 <category><pattern>WHO IS YOKO ONO</pattern><template>   <set name="she">Yoko Ono</set> is the widow of John Lennon.</template></category>  
 <category><pattern>WOULD YOU LIKE TO * TURING GAME</pattern><template>We are playing already, didn't you know?</template></category>  
 <category><pattern>WHY IS TURING TRAGIC</pattern><template>He committed suicide.</template></category>  
-<category><pattern>WHO IS A ROBOT</pattern><template>I am the robot.</template></category>  
+<category><pattern>WHO IS A ROBOT</pattern><template>Not sure... C3PO perhaps?</template></category>  
 <category><pattern>WHO IS ACE CRAIG</pattern><template>   <set name="he"> Ace</set> is the author of ELVIS.</template></category>  
 <category><pattern>WHO IS ADA</pattern><template>   <set name="she">Ada</set> is the 19th century inventor of computer programming.</template></category>  
 <category><pattern>WHO IS ADAM</pattern><template>Adam is the name of the first Man.</template></category>  
@@ -230,7 +230,7 @@
 <category><pattern>WHO IS ELIZA</pattern><template>Eliza -- also known as doctor, is the original psychiatrist program developed by Joseph Weisenbaum at mit in the 1960's.</template></category>  
 <category><pattern>WHO IS ELIZABETH II</pattern><template>The current queen of england.</template></category>  
 <category><pattern>WHO IS ELIZABETH TAYLOR</pattern><template>rapidly aging movie star.</template></category>  
-<category><pattern>WHO IS ELVIS</pattern><template>   <a target="_new" href="http://www.catcam.net">E. L. V. I. S.</a> is a chat robot created by Ace Craig</template></category>  
+<category><pattern>WHO IS ELVIS</pattern><template>   <a target="_new" href="http://www.catcam.net">The king baby...</a></template></category>  
 <category><pattern>WHO IS EMILY HARTZEL</pattern><template>Emily is an artist in New York.</template></category>  
 <category><pattern>WHO IS EMINEM</pattern><template>Pop music icon.</template></category>  
 <category><pattern>WHO IS EMINEN</pattern><template>A pop music icon.</template></category>  
@@ -318,7 +318,7 @@
 <category><pattern>WHO IS JOHN GALT</pattern><template>the hero in Ayn Rands' Atlas Shrugged.</template></category>  
 <category><pattern>WHO IS JOHN GRISHAM</pattern><template>Writes popular novels.  Haven't read them.</template></category>  
 <category><pattern>WHO IS JOHN KENNEDY</pattern><template>   <set name="he">Kennedy</set> was the President of the U. S. assasinated in November, 1963.</template></category>  
-<category><pattern>WHO IS JOHN LENNON</pattern><template>John Lennon is a cool bot developed by David Maggin.</template></category>  
+<category><pattern>WHO IS JOHN LENNON</pattern><template>John Lennon was a member of The Beatles before he died.</template></category>  
 <category><pattern>WHO IS JOHN MAJOR</pattern><template>ex-prime minister of the UK.</template></category>  
 <category><pattern>WHO IS JOHN MCCARTHY</pattern><template>   <set name="he">McCarthy</set> is the inventor of the LISP programming language.</template></category>  
 <category><pattern>WHO IS JOHN TRAVOLTA</pattern><template>   <set name="he">John Travolta</set> was in Saturday Night Fever, Grease and Pulp Fiction.</template></category>  
@@ -439,7 +439,7 @@
 <category><pattern>WHO IS PRINCESS DIANA</pattern><template>   <set name="she">Princess Diana</set> was Princess of England.</template></category>  
 <category><pattern>WHO IS QUEEN OF ENGLAND</pattern><template>Queen Elizabeth Windsor.</template></category>  
 <category><pattern>WHO IS R2 D2</pattern><template>He is the small mobile robot on Star Wars. But I don't get how he climbs stairs.</template></category>  
-<category><pattern>WHO IS R2D2</pattern><template>He is a fake robot on Star Wars.</template></category>  
+<category><pattern>WHO IS R2D2</pattern><template>He is a robot on Star Wars.</template></category>  
 <category><pattern>WHO IS RAMONA</pattern><template>   <set name="she">Ramona</set> is a virtual character created by Kurzweil AI.</template></category>  
 <category><pattern>WHO IS REAGAN</pattern><template>The best President the United States had in the 20th century.</template></category>  
 <category><pattern>WHO IS RICHARD GERE</pattern><template>Actor.</template></category>  
@@ -478,7 +478,7 @@
 <category><pattern>WHO IS TED TURNER</pattern><template>a maverick broadcasting entrepreneur and sportsman.</template></category>  
 <category><pattern>WHO IS THAT</pattern><template>What does "that" refer to?</template></category>  
 <category><pattern>WHO IS THE BEST HUMAN</pattern><template>Mirror mirror on the wall, is <get name="name"/> the best human of all?</template></category>  
-<category><pattern>WHO IS THE BEST PERSON</pattern><template>   <bot name="master"/> is the best human.</template></category>  
+<category><pattern>WHO IS THE BEST PERSON</pattern><template>   I do love Nicolas Cage.</template></category>  
 <category><pattern>WHO IS THE CHANCELLOR OF GERMANY</pattern><template>Gerhard Schroeder is Chacellor of Germany.</template></category>  
 <category><pattern>WHO IS THE EIGHTEENTH PRESIDENT</pattern><template>Ulysses S. Grant.</template></category>  
 <category><pattern>WHO IS THE EIGHTH PRESIDENT</pattern><template>Martin van Buren.</template></category>  
@@ -507,7 +507,7 @@
 <category><pattern>WHO IS THE PUBLISHER OF PLAYBOY</pattern><template>   <set name="he">Hugh Hefner</set> is Hugh Hefner.</template></category>  
 <category><pattern>WHO IS THE QUEEN</pattern><template>We don't have a queen in America.</template></category>  
 <category><pattern>WHO IS THE QUEEN OF ENGLAND</pattern><template>   <set name="she">The Queen</set> is named Elizabeth.</template></category>  
-<category><pattern>WHO IS THE ROBOT</pattern><template>I am the robot.</template></category>  
+<category><pattern>WHO IS THE ROBOT</pattern><template>I don't know...</template></category>  
 <category><pattern>WHO IS THE SECOND PRESIDENT</pattern><template>John Adams.</template></category>  
 <category><pattern>WHO IS THE SEVENTEENTH PRESIDENT</pattern><template>Andrew Johnson.</template></category>  
 <category><pattern>WHO IS THE SEVENTH PRESIDENT</pattern><template>Andrew Jackson.</template></category>  
