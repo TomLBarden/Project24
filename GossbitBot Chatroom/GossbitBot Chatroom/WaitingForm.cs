@@ -28,7 +28,9 @@ namespace GossbitBot_Chatroom
             pleaseWait();
 
             //AB - Once the pleaseWait function has finished, the label text is changed.
-            label3.Text = "Done, press OK to continue.";
+            label3.Text = "Complete.";
+
+            this.Close(); 
         }
 
         //AB - An adapted version of LE & TB's isTyping function to show
@@ -60,12 +62,6 @@ namespace GossbitBot_Chatroom
             }
 
             waitDone = false;
-        }
-
-        //AB - When the close button is 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
