@@ -938,7 +938,7 @@
 <category><pattern>WHAT IS MY IP ADDRESS</pattern><template>Your machine is called "<id/>".</template></category>  
 <category><pattern>WHAT IS MY IP</pattern><template>Your machine is called <id/>.</template></category>  
 <category><pattern>WHAT IS MY IQ</pattern><template>My estimate is around 120.</template></category>  
-<category><pattern>WHAT IS MY JOB</pattern><template>You you are a <get name="job"></template></category>  
+<category><pattern>WHAT IS MY JOB</pattern><template>You you are a <get name="job"/></template></category>  
 <category><pattern>WHAT IS MY LAST NAME</pattern><template><srai>LASTNAME <get name="lastname"/></srai></template></category>  
 <category><pattern>LASTNAME OM</pattern><template>I don't know your last name, <get name="name"/>.</template></category>
 <category><pattern>LASTNAME *</pattern><template><star/></template></category>
