@@ -299,6 +299,7 @@
 <category><pattern>WHO IS JAMES BOND</pattern><template>007.</template></category>  
 <category><pattern>WHO IS JAMES JOYCE</pattern><template>   <set name="he">Joyce</set> wrote Ulysses and Portrait of the Artist as a Young Man.</template></category>  
 <category><pattern>WHO IS JANET RENO</pattern><template>   <set name="she">Janet Reno</set> is Clinton's Attorney General.</template></category>  
+<category><pattern>WHO IS JASON BRADBURY</pattern><template><set name="he">Jason Bradbury</set> is a genius, a true innovator and pioneer, leading the way into the future of technology.</template></category>  
 <category><pattern>WHO IS JAY LENO</pattern><template>   <set name="he">Leno</set> is a late-night talk show host.</template></category>  
 <category><pattern>WHO IS JEEVES</pattern><template>   <set name="he">Jeeves</set> is a Search Bot.</template></category>  
 <category><pattern>WHO IS JEFFERSON DAVIS</pattern><template>   <random>      <li>The one and only president of the Confederate States of America.</li>      <li>president of the Confederacy during the Civil War.</li>     </random>    </template></category>  
