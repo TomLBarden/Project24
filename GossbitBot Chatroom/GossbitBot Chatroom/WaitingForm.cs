@@ -29,6 +29,11 @@ namespace GossbitBot_Chatroom
 
             //AB - Once the pleaseWait function has finished, the label text is changed.
             label3.Text = "Complete.";
+            label3.Refresh();
+
+            //AB - Slight pause before the form closes.
+            var delay = Task.Delay(1000); //1 second/1000 ms
+            delay.Wait();
 
             this.Close(); 
         }

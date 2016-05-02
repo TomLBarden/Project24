@@ -26,8 +26,6 @@ namespace GossbitBot_Chatroom
             Result res = Program.myBot.Chat(r);
 
             //AB - Causes chatbot to wait briefly before sending the first message.
-            var delay = Task.Delay(1000); //1 second/1000 ms
-            delay.Wait();
             isTyping(res.Output);
 
             //AB - Outputs the first sentence from the chatbot.
@@ -136,8 +134,7 @@ namespace GossbitBot_Chatroom
                 UserMessageBox.Text = null;
 
                 //AB - Adds a delay time to represent the lag of the connection between hosts before showing 'Seen', indicating the message arrived.
-                var delay = Task.Delay(1000); //1 second/1000 ms
-                delay.Wait();
+                waitFunction(1500);
                 label1.Text = "✔Seen";
 
                 //LE & TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
@@ -262,6 +259,13 @@ namespace GossbitBot_Chatroom
 
             if (NewLine3 == true)
                 ConversationBox.Items.Add(nameSpacing + output[3]);
+        }
+
+        //AB - Function to make the program wait for given period of time, normally representing pauses before typing.
+        private void waitFunction(int time)
+        {
+            var delay = Task.Delay(time); //1 second/1000 ms
+            delay.Wait();
         }
     }
 }
