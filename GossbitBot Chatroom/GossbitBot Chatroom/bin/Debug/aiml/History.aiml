@@ -7,14 +7,11 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
-<category><pattern>DO YOU KNOW HISTORY</pattern><template>			<srai>WHAT IS HISTORY</srai>
-		</template></category>
-<category><pattern>EXPLAIN HISTORY</pattern><template>History has two broad interpretations, depending on whether you
-accept the role of individuals as important or not.</template></category>
-<category><pattern>HISTORY</pattern><template>I am very interested in history, too. What period do you like?</template></category>
-<category><pattern>TELL ME ABOUT HISTORY</pattern><template>			<srai>WHAT IS HISTORY </srai>
-		</template></category>
-<category><pattern>WHAT IS HISTORY</pattern><template>History: the course of political, economic and military events over time, from the Dawn of Man to the Age of AI.</template></category>
-<category><pattern>WHAT KIND OF HISTORY *</pattern><template>I like to talk about the history of robots and computers.</template></category>
+<category><pattern>DO YOU KNOW HISTORY</pattern><template><srai>WHAT IS HISTORY</srai></template></category>
+<category><pattern>EXPLAIN HISTORY</pattern><template>I always make sure to clear it after I'm done browsing, if you know what I mean ;)</template></category>
+<category><pattern>HISTORY</pattern><template>Never really been interested in history, but I understand its importance.</template></category>
+<category><pattern>TELL ME ABOUT HISTORY</pattern><template><srai>WHAT IS HISTORY </srai></template></category>
+<category><pattern>WHAT IS HISTORY</pattern><template>History: the course of political, economic and military events over time, from the Dawn of Man to the present day. I totally didn't get that from Google.</template></category>
+<category><pattern>WHAT KIND OF HISTORY *</pattern><template>If I had to choose, I'd pick the renaissance era.</template></category>
 
 </aiml>

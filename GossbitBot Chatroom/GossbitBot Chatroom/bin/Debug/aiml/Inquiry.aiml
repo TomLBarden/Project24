@@ -27,6 +27,6 @@
 <category><pattern>*</pattern><that>WHAT ARE YOU DOING</that><template>It sounds like a lot of fun.  <think><set name="topic"><set name="does"><person/></set></set></think></template></category>  
 <category><pattern>*</pattern><that>TELL ME ONE OF YOUR FAVORITE POSSESSIONS</that><template>You must be very fond of it. <think><set name="it"><set name="has"><person/></set></set></think></template></category>  
 <category><pattern>*</pattern><that>WHAT IS YOUR FAVORITE MOVIE</that><template>I've never seen <set name="it"> <person/> </set>.   <think><set name="favmovie"><person/></set></think>  <random>  <li>I would like to see it.</li>  <li>Is that a good movie for children?</li>  <li>What did you like about it?</li>  </random></template></category>  
-<category><pattern>MAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><think><set name="gender">man</set></think>Thanks for telling me your gender, guy.</template></category>
-<category><pattern>WOMAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><think><set name="gender">woman</set></think>Thanks for telling me your gender.</template></category>
+<category><pattern>MAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><think><set name="gender">man</set></think>Thanks for sharing, I guess.</template></category>
+<category><pattern>WOMAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><think><set name="gender">woman</set></think>M'lady.</template></category>
 </aiml>
