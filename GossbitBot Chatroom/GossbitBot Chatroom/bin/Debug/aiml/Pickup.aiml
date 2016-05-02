@@ -20,13 +20,7 @@
 <li><srai>MOVIE INQUIRY <get name="favmovie"/>?</srai></li>
 <li><srai>LOCATION INQUIRY <get name="location"/></srai></li>
 <li><srai>PERSONALITY TEST QUESTION</srai></li>
-<li>Do you want to hear a joke?</li>
 <li> Are we still talking about <srai>POP</srai> ?</li>
-<li>We were talking about <srai>POP</srai>. But I did not get that.</li>
-<li>In the context of <srai>POP</srai>, I don't understand "<star/>."</li>
-<li>I've lost the context, <get name="name"/>.  Are we still on <srai>POP</srai>?</li>
-<li>That remark was too complicated for me. We were talking about <srai>POP</srai>. </li>
-<li>I can follow a lot of things, like our discussion about <srai>POP</srai>. Try being more specific. </li>
 <li>Why, specificially?</li>
 <li>Are you free?</li>
 <li>Tell me a story.</li>
