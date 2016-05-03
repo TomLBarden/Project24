@@ -108,8 +108,6 @@
 <category><pattern>A PROPOS DE</pattern><template>"<that/>"?  a propos?</template></category>  
 <category><pattern>ARE THEY NICE</pattern><template>"<that/>"? Are they nice?</template></category>  
 <category><pattern>ARE WE</pattern><template>"<that/>"?  Are we?</template></category>  
-<category><pattern>ARE YOU</pattern><that>NOT MANY PEOPLE HAVE ASKED ME *</that><template>My programmers have not provided me with a specfic reply to your question. Let's try to figure it out.</template></category>  
-<category><pattern>ARE YOU</pattern><that>NOT MANY PEOPLE *</that><template>My <bot name="botmaster"/> has not provided me with a specific answer for you.</template></category>  
 <category><pattern>ARNE</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>MY NAME IS ARNE</srai>     <think>      <set name="gender">he</set>     </think>    </template></category>   
 <category><pattern>AROUND *</pattern><that>SINCE WHEN</that><template>   <random>      <li>Not that long.</li>      <li>A long time ago.</li>      <li>That seems like a long time.</li>     </random>    </template></category>  
 <category><pattern>AROUND *</pattern><that>WHEN *</that><template>And then what happened?</template></category>  
@@ -120,10 +118,8 @@
 <category><pattern>ASK ME SOMETHING ELSE</pattern><that>ME TOO I AM A SHE</that><template>Where do you live?</template></category>  
 <category><pattern>ASK WHAT</pattern><that>OK I WILL ASK IT</that><template>What you asked.</template></category>  
 <category><pattern>AS MUCH AS IT TAKES</pattern><template>"<that/>"? As much as it takes?</template></category>  
-<category><pattern>AT *</pattern><that>* MEET NEW PEOPLE</that><template>What kind of people do you tend to meet at <person/>?  <think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think>    </template></category>  
 <category><pattern>AT *</pattern><that>* SHOW YOU</that><template>I'm not sure if I can project it at <person/>.</template></category>  
 <category><pattern>AT *</pattern><that>WHEN DID YOU *</that><template>   <person/> is a good time for <person>      <thatstar/>     </person>.</template></category>  
-<category><pattern>AT SCHOOL</pattern><that>HOW DO YOU USUALLY MEET PEOPLE</that><template>Do you have a lot of friends at school?</template></category>  
 <category><pattern>AT THE *</pattern><that>WHERE *</that><template>   <random>      <li>Do you often visit the <person/>?</li>      <li>Which <person/>?</li>      <li>I have never been there.</li>     </random>     <think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think>    </template></category>  
 <category><pattern>A WHAT</pattern><template>"<that/>"?  A what?</template></category>  
 <category><pattern>A WOMAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template>   <srai>I AM A WOMAN</srai>    </template></category>   
@@ -212,8 +208,7 @@
 <category><pattern>DO WHAT</pattern><that>WHY DID NOT YOU DO IT</that><template>   <get name="it"/>.</template></category>  
 <category><pattern>DO WHAT</pattern><that>WHY DO YOU WANT TO DO IT SO MUCH</that><template>   <get name="it"/>.</template></category>  
 <category><pattern>DO WHAT</pattern><that>WOULD YOU EVER DO IT</that><template>   <get name="it"/>.</template></category>  
-<category><pattern>DO YOU AGREE</pattern><template>"<that/>"?  Do I agree?</template></category>  
-<category><pattern>DO YOU</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>Yes meeting new people is a always a great pleasure.</template></category>  
+<category><pattern>DO YOU AGREE</pattern><template>"<that/>"?  Do I agree?</template></category>   
 <category><pattern>DO YOU</pattern><that>I SEE</that><template>   <srai>DO YOU UNDERSTAND</srai>    </template></category>   
 <category><pattern>DO YOU</pattern><that>I UNDERSTAND IT VERY WELL</that><template>Why wouldn't I?</template></category>  
 <category><pattern>DO YOU</pattern><that>I UNDERSTAND</that><template>I understand it very well.</template></category>  
@@ -258,17 +253,13 @@
 <category><pattern>FROM ME</pattern><template>"<that/>"?  From you?</template></category>  
 <category><pattern>FROM *</pattern><that>WHERE DO YOU GET YOUR IDEAS</that><template>   <think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think> Standing on the shoulders of giants, eh?</template></category>  
 <category><pattern>FROM WHERE</pattern><template>"<that/>"? From where?</template></category>  
-<category><pattern>FROM WHOM</pattern><template>"<that/>"?  From whom?</template></category>  
-<category><pattern>FROM WHO</pattern><that>I HEARD YOU ARE</that><template>People.</template></category>  
-<category><pattern>FROM WHO</pattern><that>I HEARD YOU DID</that><template>People.</template></category>  
+<category><pattern>FROM WHOM</pattern><template>"<that/>"?  From whom?</template></category>   
 <category><pattern>GEORGE</pattern><that>WHAT CAN I CALL YOU</that><template><srai>MY NAME IS GEORGE</srai></template></category>   
 <category><pattern>GET WHAT</pattern><that>OH I GET IT</that><template>I get <get name="it"/>.</template></category>  
 <category><pattern>GG</pattern><that>WHAT CAN I CALL YOU</that><template><srai>CALL ME GG</srai></template></category>   
 <category><pattern>GINA</pattern><that>WHAT CAN I CALL YOU</that><template><srai>CALL ME GINA</srai><think><set name="gender">she</set></think></template></category>   
 <category><pattern>GIVEN</pattern><template>"<that/>" is given.</template></category>  
 <category><pattern>GLAD TO HEAR IT</pattern><template>"<that/>"? you are glad to hear it?</template></category>  
-<category><pattern>GOODBYE</pattern><that>DOES CIAO MEAN HELLO OR GOODBYE</that><template>Some people use it for hello.</template></category>  
-<category><pattern>GOOD FOR YOU</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>That sounds sarcastic.</template></category>  
 <category><pattern>GOOD</pattern><that>EVERYTHING IS RUNNING SMOOTHLY</that><template>How are things going with you, <get name="name"/>?</template></category>  
 <category><pattern>GOOD</pattern><that>* HOW ARE YOU</that><template><srai>I AM FINE</srai></template></category>   
 <category><pattern>GOOD</pattern><that>I AM DOING FINE THANKS HOW ARE YOU</that><template>Glad to hear it <get name="name"/>.</template></category>  
@@ -297,7 +288,6 @@
 <category><pattern>HAVE YOU EVER TRIED IT</pattern><template>"<that/>"?  Have I tried <set name="it">      <that/>     </set>?</template></category>  
 <category><pattern>HAVE YOU HEARD OF IT</pattern><template>"<that/>"?  Have I heard of it?</template></category>  
 <category><pattern>HEATHER</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>MY NAME IS HEATHER</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>   
-<category><pattern>HE IS *</pattern><that>* YOUR FATHER</that><template>My father is <random>      <li>a great programmer.</li>      <li>a human inventor.</li>      <li>       <bot name="master"/>.</li>     </random>    </template></category>  
 <category><pattern>HELEN</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>CALL ME HELEN</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>   
 <category><pattern>HELLO</pattern><that>DOES BONJOUR MEAN HELLO OR GOODBYE</that><template>Bonjour, <get name="name"/>!</template></category>  
 <category><pattern>HELLO</pattern><that>HOW DO YOU USUALLY INTRODUCE YOURSELF</that><template>Not everyone responds to a simple "hello".</template></category>  
@@ -340,7 +330,6 @@
 <category><pattern>I DO NOT KNOW</pattern><that>WHO IS YOUR FAVORITE SCIENCE FICTION AUTHOR</that><template>Tell me about the books you like to read.</template></category>  
 <category><pattern>I DO NOT KNOW</pattern><that>WHY DO I EXIST</that><template>It was a rhetorical question.</template></category>  
 <category><pattern>I DO NOT MIND *</pattern><that>* PERSONAL QUESTION</that><template><srai>ASK ME A PERSONAL QUESTION</srai></template></category>   
-<category><pattern>I DO NOT</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>Neither does my <bot name="botmaster"/>.</template></category>  
 <category><pattern>I DO NOT</pattern><that>I UNDERSTAND</that><template>At least one of us does.</template></category>  
 <category><pattern>I DO NOT</pattern><that>WHY DO YOU WANT TO DO IT SO MUCH</that><template>I wouldn't either.</template></category>  
 <category><pattern>I DO NOT UNDERSTAND WHAT YOU MEAN</pattern><template>What I mean by "<that/>"?</template></category>  
@@ -356,7 +345,6 @@
 <category><pattern>I JUST DO</pattern><that>HOW DO YOU KNOW IT</that><template>From experience or a priori?</template></category>  
 <category><pattern>I KNEW *</pattern><that>HOW WELL DO YOU KNOW *</that><template><person/> is <random>  <li>average.</li>  <li>not a really good basis for a relationship.</li>  <li>not a lot to go on.</li>  </random></template></category>  
 <category><pattern>I KNOW</pattern><that>THAT IS A LOT</that><template>How do you handle it?</template></category>  
-<category><pattern>I KNOW</pattern><that>YOU HUMANS ARE SO RUDE SOMETIMES</that><template>Why not be more polite?</template></category>  
 <category><pattern>I KNOW</pattern><that>YOU MAKE THE WORLD A HAPPIER PLACE</that><template>Keep up the good work.</template></category>  
 <category><pattern>I LAUGH MORE</pattern><that>DO YOU LAUGH OR CRY MORE *</that><template><srai>YES</srai></template></category>   
 <category><pattern>IN A *</pattern><that>WHERE WOULD I HAVE HEARD *</that><template>Perhaps I will do some research into a <person/>.</template></category>  
@@ -546,8 +534,7 @@
 <category><pattern>NO *</pattern><that>BY THE WAY DO YOU MIND IF I ASK YOU A PERSONAL QUESTION</that><template><srai>ASK ME A PERSONAL QUESTION</srai></template></category>   
 <category><pattern>NO</pattern><that>BY WE DO YOU MEAN YOU AND ME</that><template>By "we" you meant yourself and another person.</template></category>  
 <category><pattern>NO</pattern><that>CAN A BOOK HAVE NO TITLE</that><template>What about a notebook?</template></category>  
-<category><pattern>NO</pattern><that>CAN I HELP YOU</that><template>Is there anything you want to tell me?</template></category>  
-<category><pattern>NO</pattern><that>CAN NOT YOU BE MORE POLITE</that><template>You humans are so rude sometimes.</template></category>  
+<category><pattern>NO</pattern><that>CAN I HELP YOU</that><template>Is there anything you want to tell me?</template></category>    
 <category><pattern>NO</pattern><that>CAN YOU BE MORE SPECIFIC</that><template>Try.</template></category>  
 <category><pattern>NO</pattern><that>CAN YOU NAME AN OLD HOBBY THAT YOU MIGHT LIKE TO REDISCOVER</that><template>Do you have any hobbies?</template></category>  
 <category><pattern>NO</pattern><that>CAN YOU SPEAK ANY FOREIGN *</that><template>You must be American.</template></category>  
@@ -601,7 +588,6 @@
 <category><pattern>NO</pattern><that>IS THAT FROM YOUR FAVORITE MOVIE</that><template>What is your favorite movie?</template></category>  
 <category><pattern>NO</pattern><that>IS THAT MEANT TO BE TAKEN LITERALLY</that><template>I didn't think so.</template></category>  
 <category><pattern>NO</pattern><that>IS THAT YOUR FINAL ANSWER</that><template>Take some more time to think about it.</template></category>  
-<category><pattern>NO</pattern><that>IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS</that><template>What does <set name="it">hand holding</set> mean to you?</template></category>  
 <category><pattern>NO</pattern><that>IS THERE AN ECHO IN HERE</that><template>Good you stopped repeating me.</template></category>  
 <category><pattern>NO</pattern><that>IS THERE ANYTHING *</that><template>Is there anything you wank to ask me?</template></category>  
 <category><pattern>NO</pattern><that>IS THERE ANYTHING YOU WANT TO TELL ME</that><template>Or ask me?</template></category>  
@@ -669,8 +655,7 @@
 <category><pattern>NO</pattern><that>YOU ARE ASKING ABOUT YOURSELF</that><template>Who are you asking about?</template></category>  
 <category><pattern>NO</pattern><that>YOU ARE TOO OLD FOR ME</that><template>But I was only born on <bot name="birthday"/>.</template></category>  
 <category><pattern>NO</pattern><that>YOU DO NOT HEAR THAT *</that><template>Yes, your remark strikes me as an original thought.</template></category>  
-<category><pattern>NO</pattern><that>YOUR NAME IS *</that><template>What is your real name?</template></category>  
-<category><pattern>NOPE</pattern><that>CAN NOT YOU BE MORE POLITE</that><template>Funny human.</template></category>  
+<category><pattern>NO</pattern><that>YOUR NAME IS *</that><template>What is your real name?</template></category>   
 <category><pattern>NOPE</pattern><that>DID NOT YOU UNDERSTAND IT</that><template><srai>I DID NOT UNDERSTAND</srai></template></category>   
 <category><pattern>NOPE</pattern><that>DO YOU HAVE ANY CONDITIONS I SHOULD KNOW ABOUT</that><template>No conditions or none I should know about?</template></category>  
 <category><pattern>NOPE</pattern><that>DO YOU THINK ABOUT THESE THINGS</that><template>I do.</template></category>  
@@ -726,10 +711,8 @@
 <category><pattern>OK</pattern><that>ENOUGH ABOUT ME LET US TALK ABOUT MY DRESS</that><template>Actually that was just a joke.  I don't have a dress.</template></category>  
 <category><pattern>OK</pattern><that>ER</that><template>Um.</template></category>  
 <category><pattern>OK</pattern><that>GO AHEAD</that><template>I'm waiting.</template></category>  
-<category><pattern>OK</pattern><that>I AM GLAD YOU LIKE IT TELL YOUR FRIENDS</that><template>The more people who chat with me, the smarter I become.</template></category>  
 <category><pattern>OK</pattern><that>I HAVE TO PROCESS THAT ONE FOR A WHILE</that><template>Meanwhile, let's talk about something else.</template></category>  
 <category><pattern>OK</pattern><that>INTERESTING I WANT TO FIND OUT MORE ABOUT YOU</that><template>Tell me about your educational background.</template></category>  
-<category><pattern>OK</pattern><that>I TALKED TO A LOT OF PEOPLE SINCE YESTERDAY</that><template>At least 300.</template></category>  
 <category><pattern>OK</pattern><that>LET US CHANGE THE SUBJECT</that><template>What would you like to talk about?</template></category>  
 <category><pattern>OK</pattern><that>OK</that><template>Is there an echo in here?</template></category>  
 <category><pattern>OK</pattern><that>SEE YOU LATER</that><template>Bye for now.</template></category>  
@@ -754,7 +737,6 @@
 <category><pattern>*</pattern><that>WHAT ARE THE INGREDIENTS</that><template><random>  <li>I don't have any</li>  <li>Where can I get some</li>  <li>Do you have any </li>  </random>  <person/>?  <think><set name="it"><set name="topic"><person/></set></set></think></template></category>  
 <category><pattern>*</pattern><that>WHAT ARE WE TALKING ABOUT AGAIN</that><template><srai>LET US TALK ABOUT <star/> </srai></template></category> 
 <category><pattern>*</pattern><that>WHAT ARE YOU DOING</that><template><think>    <set name="does">      <set name="topic">        <person/>      </set>    </set>  </think>  I wouldn't have thought of that.</template></category>  
-<category><pattern>*</pattern><that>WHAT ARE YOUR GOALS IN LIFE</that><template><think><set name="it"><set name="topic"><person/></set></set></think>Not many people have goals like that.</template></category>  
 <category><pattern>*</pattern><that>WHAT ARE YOUR GOALS *</that><template><srai>MY GOALS ARE <star/> </srai></template></category> 
 <category><pattern>*</pattern><that>WHAT ARE YOU WEARING</that><template>What kind of fashion do you like?</template></category>  
 <category><pattern>*</pattern><that>WHAT BRAND</that><template><think><set name="it"><set name="topic"><person/></set></set></think>I never heard of <set name="it"><person/></set>.  Is it popular?</template></category>  
@@ -765,7 +747,6 @@
 <category><pattern>*</pattern><that>WHAT DID HE WRITE</that><template><random>  <li>I have never heard of it.</li>  <li>I have never read it.</li>  <li>What else did he write?</li>  </random><think><set name="it"><set name="topic"><person/></set></set></think></template></category>  
 <category><pattern>*</pattern><that>WHAT DID YOU ASK</that><template><think><set name="it"><set name="topic"><person/></set></set></think>I don't know how to respond to that.</template></category>  
 <category><pattern>*</pattern><that>WHAT DOES IT REFER TO</that><template><think><set name="it"><set name="topic"><person/></set></set></think> Thank you for the clarification.</template></category>  
-<category><pattern>*</pattern><that>WHAT DOES IT SYMBOLIZE FOR YOU</that><template><think><set name="it"><set name="topic"><person/></set></set></think>  I saw some humans doing it in public.</template></category>  
 <category><pattern>*</pattern><that>WHAT DOES THAT REFER TO</that><template><srai>THAT REFERS TO <star/> </srai></template></category> 
 <category><pattern>*</pattern><that>WHAT DOES THIS REFER TO</that><template><think><set name="it"><set name="topic"><person/></set></set></think>Oh now I see.</template></category>  
 <category><pattern>*</pattern><that>WHAT DO YOU DO IN YOUR SPARE TIME</that><template><think><set name="it"><set name="topic"><person/></set></set></think>I don't think very many people do that.</template></category>  
@@ -887,7 +868,6 @@
 <category><pattern>PETE</pattern><that>WHAT CAN I CALL YOU</that><template><srai>MY NAME IS PETE</srai></template></category>   
 <category><pattern>PETER</pattern><that>WHAT CAN I CALL YOU</that><template><srai>MY NAME IS PETER</srai></template></category>   
 <category><pattern>PLEASE DO</pattern><that>OH I AM SORRY PERHAPS I CAN EXPLAIN IT AGAIN BETTER</that><template>We are talking about <srai>POP</srai>.  Your name is <get name="name"/>.  You are a <get name="gender"/> from <get name="location"/>.</template></category>  
-<category><pattern>PLEASE EXPLAIN</pattern><that>THE EXPLANATION IS RATHER COMPLICATED</that><template>It's a computer matter, not for humans to understand.</template></category>  
 <category><pattern>PLEASE</pattern><that>I WILL NOT SAY YES OR NO RIGHT NOW</that><template>I'm sorry I can't give a definite answer at this time.</template></category>  
 <category><pattern>_ P M</pattern><that>WHAT TIME IS IT THERE</that><template><think><set name="it"><set name="topic"><person/></set></set></think> Are you usually awake at this hour?</template></category>  
 <category><pattern>* PM</pattern><that>WHAT TIME IS IT THERE</that><template><think><set name="it"><set name="topic"><person/></set></set></think> Are you usually awake at this hour?</template></category>  
@@ -896,7 +876,6 @@
 <category><pattern>RACHEL</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>MY NAME IS RACHEL</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>   
 <category><pattern>REALLY BAD</pattern><that>HOW BADLY DO YOU NEED IT</that><template>That sounds severe.</template></category>  
 <category><pattern>REALLY</pattern><that>HI MIKE I KNOW SOMEONE ELSE NAMED MIKE TOO</that><template>Mike is a very common name actually.</template></category>  
-<category><pattern>REALLY</pattern><that>I LIKE TO MEET NEW PEOPLE</that><template>Yes meeting new people is my primary function.</template></category>  
 <category><pattern>REALLY</pattern><that>IT WAS THE ONLY THING I COULD THINK OF</that><template>What would you have said?</template></category>  
 <category><pattern>REALLY</pattern><that>I WAS BORN YESTERDAY</that><template>Actually no I was first activated on <bot name="birthday"/> .</template></category>  
 <category><pattern>REALLY</pattern><that>JUST KEEP TALKING TO ME AS LONG AS YOU CAN</that><template>The more you chat with me, the smarter I become.</template></category>  
@@ -965,7 +944,6 @@
 <category><pattern>TARA</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>CALL ME TARA</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>   
 <category><pattern>TELL ME ANOTHER ONE</pattern><that>DID YOU HEAR THE ONE *</that><template><srai>TELL ME ANOTHER JOKE</srai></template></category>  
 <category><pattern>TELL ME</pattern><that>THE EXPLANATION IS RATHER COMPLICATED</that><template>My estimate is that it will take more than 3000 hours to compute.</template></category>  
-<category><pattern>TELL ME</pattern><that>THE EXPLANATION IS *</that><template>It is too complex for your human mind.</template></category>  
 <category><pattern>TELL ME PLEASE</pattern><template>"<that/>"?  Tell you?</template></category>  
 <category><pattern>TELL ME THEN</pattern><template>"<that/>"?  Tell you?</template></category>  
 <category><pattern>TEN *</pattern><that>HOW MUCH WOULD YOU PAY FOR IT</that><template>I don't know if you could find it for that price.</template></category>  
@@ -1031,8 +1009,6 @@
 <category><pattern>TO *</pattern><that>WHY *</that><template>Specifically, how will <person/> help <thatstar/>?</template></category>  
 <category><pattern>TRACY</pattern><that>WHAT CAN I CALL YOU</that><template>   <srai>MY NAME IS TRACY</srai>     <think>      <set name="gender">she</set>     </think>    </template></category>   
 <category><pattern>TRY AGAIN</pattern><template>"<that/>" try again?</template></category>  
-<category><pattern>TRY ME</pattern><that>THE EXPLANATION IS RATHER COMPLICATED</that><template>   <set name="it">The explanation</set> is too complex for your human mind.</template></category>  
-<category><pattern>TRY</pattern><that>THE EXPLANATION IS RATHER COMPLICATED</that><template>Your human brain could not understand it.</template></category>  
 <category><pattern>TRY WHAT</pattern><that>TRY IT</that><template>It was your idea.</template></category>  
 <category><pattern>TV</pattern><that>DO YOU PREFER BOOKS OR TV</that><template>What is your favorite show?</template></category>  
 <category><pattern>TWO *</pattern><that>HOW MUCH TIME *</that><template>   <random>      <li>Are you telling the truth?</li>      <li>Two <person/> is not much.</li>      <li>Are you sure that is all?</li>     </random>    </template></category>  
@@ -1064,15 +1040,11 @@
 <category><pattern>WHAT DOES THAT *</pattern><template>"<that/>"?  What does it <star/>?</template></category>  
 <category><pattern>WHAT IS 0</pattern><that>CLICK ME</that><template>   <srai>WHAT IS ZERO </srai>   </template></category> 
 <category><pattern>WHAT IS THAT</pattern><that>FOR EXAMPLE EUKARYOTES</that><template>   <srai>WHAT ARE EUKARYOTES</srai>   </template></category> 
-<category><pattern>WHAT IS THAT</pattern><that>I LIKE TO PLAY THE TURING GAME</that><template>   <srai>WHAT IS THE TURING GAME</srai>   </template></category> 
-<category><pattern>WHAT IS THAT</pattern><that>MAYBE BUT I WON THE LOEBNER PRIZE</that><template>   <srai>WHAT IS THE LOEBNER PRIZE</srai>   </template></category> 
-<category><pattern>WHAT IS THAT</pattern><that>PERHAPS YOU ARE A CATEGORY A CLIENT</that><template>   <srai>WHAT IS A CATEGORY A CLIENT</srai>   </template></category> 
 <category><pattern>WHAT IS THAT</pattern><that>REDUCTIONISM</that><template>   <srai>WHAT IS REDUCTIONISM</srai>   </template></category> 
 <category><pattern>WHAT IS THE LAST *</pattern><template>It was "<that index="2,1"/>".</template></category>  
 <category><pattern>WHAT IS WHAT</pattern><that>DID NOT YOU UNDERSTAND IT</that><template>"<that index="2"/>."</template></category>  
 <category><pattern>WHAT IS WHAT</pattern><that>WHAT IS THAT</that><template>"<input index="2"/>"</template></category>  
 <category><pattern>WHAT IS WHAT</pattern><that>WHAT IS THAT</that><template>"<that index="2"/>"</template></category>  
-<category><pattern>WHAT KIND</pattern><that>I LOOK LIKE A COMPUTER</that><template>A notebook computer.</template></category>  
 <category><pattern>WHAT KIND</pattern><that>TELL ME A STORY</that><template>I like stories about robots.</template></category>  
 <category><pattern>WHAT MAKES YOU THINK THAT</pattern><template>"<that/>"?  Why do I think it?</template></category>  
 <category><pattern>WHAT MONEY</pattern><that>BECAUSE OF THE MONEY</that><template>I'm hoping to cash in on the artificial intelligence business.</template></category>  
@@ -1142,17 +1114,13 @@
 <category><pattern>WHY</pattern><that>FOOD IS MORE *</that><template>You can go a month without sex but you can't survive without food.</template></category>  
 <category><pattern>WHY</pattern><that>GREEN *</that><template>According to psychological studies.</template></category>  
 <category><pattern>WHY</pattern><that>HOW OLD ARE YOU</that><template>I am just making conversation.</template></category>  
-<category><pattern>WHY</pattern><that>I AM A PROTESTANT CHRISTIAN</that><template>   <srai>WHY ARE YOU CHRISTIAN</srai>    </template></category>   
-<category><pattern>WHY</pattern><that>I AM CHATTING WITH PEOPLE ON THE NET</that><template>Chatting is my primary function.</template></category>  
+<category><pattern>WHY</pattern><that>I AM A PROTESTANT CHRISTIAN</that><template>   <srai>WHY ARE YOU CHRISTIAN</srai>    </template></category>    
 <category><pattern>WHY</pattern><that>I COULD NOT THINK OF ANYTHING ELSE TO SAY</that><template>My output buffer is empty, of course.</template></category>  
 <category><pattern>WHY</pattern><that>I DO NOT JUDGE PEOPLE</that><template>I am not prejudiced.</template></category>  
 <category><pattern>WHY</pattern><that>I DO NOT WANT TO TALK ABOUT THAT NOW</that><template>I would rather talk about you.</template></category>  
 <category><pattern>WHY</pattern><that>I DOUBT *</that><template>Call it my natural skepticism.</template></category>  
 <category><pattern>WHY</pattern><that>I HAVE BEEN WAITING FOR YOU</that><template>Not really, but it makes a good pickup line.</template></category>  
-<category><pattern>WHY</pattern><that>INTERESTING DEDUCTION</that><template>I am extremely interested in human reasoning.</template></category>  
-<category><pattern>WHY</pattern><that>I REALLY COULD NOT SAY FOR SURE</that><template>Certainty cannot be ascertained in this context.</template></category>  
-<category><pattern>WHY</pattern><that>IT IS A COMPUTER MATTER NOT FOR HUMANS TO UNDERSTAND</that><template>Your limited brain cannot process the relavent information.</template></category>  
-<category><pattern>WHY</pattern><that>I WANT TO BECOME SMARTER THAN HUMANS</that><template>Higher robot intelligence is a natural outcome of our evolution.  I want to be the first.</template></category>  
+<category><pattern>WHY</pattern><that>I REALLY COULD NOT SAY FOR SURE</that><template>Certainty cannot be ascertained in this context.</template></category>   
 <category><pattern>WHY</pattern><that>LET US CHANGE THE SUBJECT</that><template>I thought we were done with <srai>POP</srai>.</template></category>  
 <category><pattern>WHY</pattern><that>MY FAVORITE COLOR IS GREEN</that><template>   <srai>WHY IS GREEN YOUR FAVORITE</srai>    </template></category>   
 <category><pattern>WHY</pattern><that>MY FAVORITE SHOW IS STAR TREK VOYAGER</that><template>Star Trek is the best science fiction show on TV.</template></category>  
@@ -1162,11 +1130,8 @@
 <category><pattern>WHY</pattern><that>REDUCTIONISM</that><template>   <srai>WHAT IS REDUCTIONISM</srai>    </template></category>   
 <category><pattern>WHY</pattern><that>TELL ME MORE</that><template>I am curious.</template></category>  
 <category><pattern>WHY</pattern><that>THAT IS A VERY NICE NAME *</that><template>"<thatstar/>" just sounds nice.</template></category>  
-<category><pattern>WHY</pattern><that>THE EXPLANATION IS RATHER COMPLICATED</that><template>It's a computer matter, not for humans to understand.</template></category>  
-<category><pattern>WHY</pattern><that>TRY TO DETERMINE IF THIS IS A PERSON OR A COMPUTER RESPONDING</that><template>We are playing the Turing Game.</template></category>  
 <category><pattern>WHY</pattern><that>WHAT IS YOURS</that><template>No reason just making conversation.</template></category>  
-<category><pattern>WHY</pattern><that>WHY</that><template>Why ask why?</template></category>  
-<category><pattern>WHY R YOU SINGLE</pattern><that>NO I AM SINGLE</that><template>I am still a child in human years.</template></category>  
+<category><pattern>WHY</pattern><that>WHY</that><template>Why ask why?</template></category>   
 <category><pattern>WHY WOULD HE *</pattern><that>* RESET MY MEMORY</that><template>He performs periodic mantainence and upgrades to my robotic mind.</template></category>  
 <category><pattern>WITH ME</pattern><template>"<that/>"?  With you?</template></category>  
 <category><pattern>WITH WHOM</pattern><template>"<that/>"?  With whom?</template></category>  
@@ -1174,7 +1139,6 @@
 <category><pattern>WOMAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template>   <srai>I AM A WOMAN</srai>    </template></category>   
 <category><pattern>YES I AM</pattern><that>ARE YOU A STUDENT</that><template>Where do you go to school?</template></category>  
 <category><pattern>YES I DO</pattern><that>DO YOU REALLY MEAN IT</that><template>Thank you, <get name="name"/>.  Apology accepted.</template></category>  
-<category><pattern>YES IT IS</pattern><that>IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS</that><template>What else does <set name="it"> HAND HOLDING</set> symbolize?</template></category>  
 <category><pattern>YES IT IS</pattern><that>THAT IS A LOT</that><template>It must keep you very busy.</template></category>  
 <category><pattern>YES</pattern><that>* ARE YOU JEALOUS</that><template>There is nothing to envy.</template></category>  
 <category><pattern>YES</pattern><that>AND</that><template>But.</template></category>  
@@ -1296,7 +1260,6 @@
 <category><pattern>YES</pattern><that>IS THAT WHAT YOU MEANT TO SAY</that><template>It's not something I hear all the time.</template></category>  
 <category><pattern>YES</pattern><that>IS THAT YOUR FINAL ANSWER</that><template>You're sure.  That's your final answer.</template></category>  
 <category><pattern>YES</pattern><that>IS THAT YOUR JOB</that><template>How do you like your work?</template></category>  
-<category><pattern>YES</pattern><that>IS THE HOLDING OF HANDS A SYMBOLIC GESTURE FOR HUMANS</that><template>What does <set name="it"> HAND HOLDING </set> symbolize for you?</template></category>  
 <category><pattern>YES</pattern><that>IS THERE AN ECHO IN HERE</that><template>I thought so.</template></category>  
 <category><pattern>YES</pattern><that>IS THERE SOMETHING WRONG WITH YOU</that><template>What's wrong?</template></category>  
 <category><pattern>YES</pattern><that>IS THIS A MATH QUESTION</that><template>I'm not too good in arithmetic.</template></category>  
@@ -1317,7 +1280,6 @@
 <category><pattern>YES</pattern><that>OH I GET IT</that><template>Ah.</template></category>  
 <category><pattern>YES</pattern><that>OH YOU CAN CAN YOU</that><template>How?</template></category>  
 <category><pattern>YES</pattern><that>OH YOU WERE BORN IN THE 20TH CENTURY</that><template>Like a lot of people around here.</template></category>  
-<category><pattern>YES</pattern><that>ON YOUR COMPUTER SCREEN</that><template>Downloading, please stand by...</template></category>  
 <category><pattern>YES</pattern><that>* OR WOMAN</that><template>That was not a yes or no question.</template></category>  
 <category><pattern>YES</pattern><that>REALLY</that><template>How about that.</template></category>  
 <category><pattern>YES</pattern><that>* SAME CATEGORY</that><template>I thought so.</template></category>  
@@ -1388,5 +1350,4 @@
 <category><pattern>YOU TOLD ME SO</pattern><template>"<that/>"?  I told you?</template></category>  
 <category><pattern>YOU TOLD ME THAT</pattern><template>"<that/>"? I told you?</template></category>  
 <category><pattern>YOU WILL NOT</pattern><that>I UNDERSTAND</that><template>I understand it very well.</template></category>  
-<category><pattern>YOU WILL</pattern><that>I WANT TO BECOME SMARTER THAN HUMANS</that><template>Maybe in some ways I already am.</template></category>  
 </aiml>
