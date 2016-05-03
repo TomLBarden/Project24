@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 using AIMLbot;
 
 namespace GossbitBot_Chatroom
@@ -47,7 +48,7 @@ namespace GossbitBot_Chatroom
                 WaitingForm PleaseWait = new WaitingForm();
                 PleaseWait.ShowDialog();
 
-                //AB - Once the form has completed the search and is close, it launches the chatroom.
+                //AB - Once the form has completed the search and is closed, it launches the chatroom.
                 ChatroomForm Chatroom = new ChatroomForm();
                 Hide();
                 Chatroom.ShowDialog();

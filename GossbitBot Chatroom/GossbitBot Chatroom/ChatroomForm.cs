@@ -355,17 +355,52 @@ namespace GossbitBot_Chatroom
 
             //AB - Random number generated to see if there will be an error in the line, and if so, which error.
             //AB - Errors only occur every so often to increase realism.
-            int errorChoice = r.Next(1,50);
+            int errorChoice = r.Next(1,40);
+
 
             //AB - If error 1 is chosen, marvin will accidently stop the line early and will then say 'oops' before continuing as normal.
             if(errorChoice == 1)
             {
-                ConversationBox.Items.Add("New line error here.");
+                //AB - Two strings to store the halves of the original line.
+                string lineHalf1 = "";
+                string lineHalf2 = "";
+
+                //AB - Random number to decide where the line will be split.
+                int lineBreak = r.Next(10, output[1].Length);
+
+                //AB - Counter to track through the progress towards the line split.
+                int ctr = 0;
+
+                //AB - Iterates through the line adding the characters to the first string until it reaches the break. Then it adds the characters to the second string.
+                foreach(char c in output[1])
+                {
+                    if (ctr <= lineBreak)
+                        lineHalf1 += c;
+
+                    else
+                        lineHalf2 += c;
+
+                    ctr++;
+                }
+
+                //--- AB - Outputs all the strings in a disjointed manner. ---\\
+
+                //AB - Types for the first half line, then outputs early.
+                isTyping(lineHalf1);
+                ConversationBox.Items.Add(name + ": " + lineHalf1);
+
+                waitFunction(1000);
+
+                //AB - Then continues to type the rest of the message as normal.
+                input = lineHalf2 + output[2] + output[3];
+                isTyping(input);
+                string[] outputNew = new string[4];
+                lineSplitter(input, outputNew, name);
             }
 
 
-            //AB - If error 2, 3, or 4 is chosen then Marvin will add accidently add a letter: q, w, or x.
-            if (errorChoice == 2 | errorChoice == 3 | errorChoice == 4)
+            //AB - If error 2 - 7 is chosen then Marvin will add accidently add a letter: q, w, or x.
+            if (errorChoice == 2 | errorChoice == 3 | errorChoice == 4 | errorChoice == 5 | errorChoice == 6 | errorChoice == 7 | errorChoice == 8 | errorChoice == 9 | errorChoice == 10)
             {
                 //AB - String to store the line with the added letter.
                 string changedString = "";
@@ -383,13 +418,13 @@ namespace GossbitBot_Chatroom
 
                     if (ctr == swappedLetter)
                     {
-                        if (errorChoice == 2)
+                        if (errorChoice == 2 | errorChoice == 5 | errorChoice == 8)
                             changedString += 'q';
 
-                        if (errorChoice == 3)
+                        if (errorChoice == 3 | errorChoice == 6 | errorChoice == 9)
                             changedString += 'w';
 
-                        if (errorChoice == 4)
+                        if (errorChoice == 4 | errorChoice == 7 | errorChoice == 10)
                             changedString += 'x';
                     }
 
@@ -397,7 +432,8 @@ namespace GossbitBot_Chatroom
                     ctr++;
                 }
 
-                //Outputs as normal but with the added letter.
+                //--- AB - Outputs as normal but with the added letter. ---\\
+
                 //LE & TB - Displays 'Marvin is tpying...' label animation while bot replies 
                 isTyping(input);
 
@@ -414,7 +450,7 @@ namespace GossbitBot_Chatroom
             }
 
             //AB - If no error is going to occur, the defeault output will happen.
-            if (errorChoice >= 5)
+            if (errorChoice > 10)
             {
                 //LE & TB - Displays 'Marvin is tpying...' label animation while bot replies 
                 isTyping(input);
