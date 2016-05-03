@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <aiml>
 <!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
 <!-- This program is open source code released under -->
@@ -7,7 +7,7 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
-<category>
+  <category>
 	<pattern>*</pattern>
 	<template>
 		<random>

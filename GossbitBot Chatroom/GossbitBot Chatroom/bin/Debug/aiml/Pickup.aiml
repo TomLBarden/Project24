@@ -8,7 +8,7 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Revision Pickup-1.06 -->
 <!-- Last Modified Jan 29 2005 -->
- 
+
 <category> <pattern>*</pattern>  <template> <srai>RANDOM PICKUP LINE</srai> <think> <set name="it"> <set name="topic"> <person/>  </set> </set> <srai>PUSH <get name="topic"/></srai> </think> </template> </category> 
 <category> <pattern>RANDOM PICKUP LINE</pattern>  
 <template> 

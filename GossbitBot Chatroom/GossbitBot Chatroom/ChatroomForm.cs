@@ -8,6 +8,8 @@ namespace GossbitBot_Chatroom
     public partial class ChatroomForm : Form
     {
         bool waitDone = false;
+        bool AIMode = false;
+        int conversationCount = 1;
 
         public ChatroomForm()
         {
@@ -47,6 +49,15 @@ namespace GossbitBot_Chatroom
             {
                 SendButton.PerformClick();
                 e.Handled = true;
+            }
+
+            if (e.KeyCode == Keys.F1)
+            {
+                if (AIMode == false)
+                    AIMode = true;  
+
+                else
+                    AIMode = false;  
             }
 
             //AB - Performs a decrease of the count when the backspace or enter key is pressed.
@@ -124,10 +135,6 @@ namespace GossbitBot_Chatroom
 
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
                 ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
-                
-                //AB - Takes user string and generates the response from the AIML knowledge base.
-                Request r = new Request(UserMessageBox.Text, Program.myUser, Program.myBot);
-                Result res = Program.myBot.Chat(r);
 
                 //AB - Sets the UserMessageBox to being empty.
                 string userInput = UserMessageBox.Text;
@@ -140,8 +147,22 @@ namespace GossbitBot_Chatroom
                 //LE & TB - Adds a delay with the Bot's response to allow for 'Reading Time'.
                 isReading(userInput);
 
-                //AB & ABo - Method call to the lineSplitter function, that splits long messages into separate lines and outputs them.
-                lineSplitterBot(res.Output, BotLines, "Marvin");    
+                //AB - Occurs when the bot is gossiping.
+                if (AIMode == false)
+                {
+                    gossipGenerator();
+                }
+
+                //AB - Occurs when the bot is just involved in general conversation.
+                if (AIMode == true)
+                {
+                    //AB - Takes user string and generates the response from the AIML knowledge base.
+                    Request r = new Request(userInput, Program.myUser, Program.myBot);
+                    Result res = Program.myBot.Chat(r);
+
+                    //AB & ABo - Method call to the lineSplitter function, that splits long messages into separate lines and outputs them.
+                    lineSplitterBot(res.Output, BotLines, "Marvin");
+                }
 
                 //AB - If the list box is filled, this scroll the list box down to the most recently added item.
                 ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
@@ -277,17 +298,7 @@ namespace GossbitBot_Chatroom
                 //AB & ABo - If the program is dealing with the first line, it adds the characters to the first line string.
                 if (Line1 == true)
                 {
-                    //AB - If statement that catches the | character and uses it as a queue to move to the next line.
-                    //AB - Limited to 2 new lines per statement in AIML.
-                    if (c == '|')
-                    {
-                        Line1 = false;
-                        Line2 = true;
-                        count = 0;
-                        continue;
-                    }
-                    else
-                    {
+
                         output[1] = output[1] + c;
                         count++;
 
@@ -299,24 +310,11 @@ namespace GossbitBot_Chatroom
                             Line2 = true;
                             count = 0;
                         }
-                    }
                 }
 
                 //AB & ABo - If the program is dealing with the second, line it adds the characters to the first line string.
                 if (Line2 == true)
                 {
-                    //AB - If statement that catches the | character and uses it as a queue to move to the next line.
-                    //AB - Limited to 2 new lines per statement in AIML.
-                    if (c == '|')
-                    {
-                        Line2 = false;
-                        Line3 = true;
-                        count = 0;
-                        continue;
-                    }
-
-                    else
-                    {
                         output[2] = output[2] + c;
                         count++;
 
@@ -328,7 +326,6 @@ namespace GossbitBot_Chatroom
                             Line3 = true;
                             count = 0;
                         }
-                    }
                 }
                 //AB & ABo - If the program is dealing with the second, line it adds the characters to the first line string.
                 if (Line3 == true)
@@ -366,7 +363,7 @@ namespace GossbitBot_Chatroom
                 string lineHalf2 = "";
 
                 //AB - Random number to decide where the line will be split.
-                int lineBreak = r.Next(10, output[1].Length);
+                int lineBreak = r.Next(0, output[1].Length);
 
                 //AB - Counter to track through the progress towards the line split.
                 int ctr = 0;
@@ -406,7 +403,7 @@ namespace GossbitBot_Chatroom
                 string changedString = "";
 
                 //AB - Random number to decide where a letter will be added.
-                int swappedLetter = r.Next(10, output[1].Length);
+                int swappedLetter = r.Next(0, output[1].Length);
 
                 //AB - Counter to track through the progress towards the letter to be added.
                 int ctr = 0;
@@ -473,6 +470,90 @@ namespace GossbitBot_Chatroom
         {
             var delay = Task.Delay(time); //1 second/1000 ms
             delay.Wait();
+        }
+
+        //AB - Function to aid in the flow of gossip.
+        private void gossipGenerator()
+        {
+            //AB - String to store the bots output.
+            string input = "";
+            string input2 = "";
+
+            string[] output = new string[4];
+            string[] output2 = new string[4];
+
+            //AB - Switch which uses different phrases depending how far through the conversation is.
+            switch (conversationCount)
+            {
+                case 1:
+                    input = "Hi";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+
+                    waitFunction(1000);
+
+                    input2 = "Alright i guess, feeling kinda annoyed though";
+                    isTyping(input2);
+                    lineSplitter(input2, output2, "Marvin");
+                    break;
+
+                case 2:
+                    input = "Just a bit pissed off with my flatmate really. Shes just getting under my skin at the moment";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+                    break;
+
+                case 3:
+                    input = "She just never does her washing up and just leaves all her stuff in the sink, then has a go at uss.";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+
+                    waitFunction(1000);
+
+                    input2 = "And she will not shut up, holy shit. She narrqates everything she does, no one even cares. URGH.";
+                    isTyping(input2);
+                    lineSplitter(input2, output2, "Marvin");
+                    break;
+
+                case 4:
+                    input = "I wanted to, but I left it too late, now im stuck with the cow for another year";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+                    break;
+
+                case 5:
+                    input = "No seriously, she's a bitch.";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+                    break;
+
+                case 6:
+                    input = "Don't tell me my damn buiesness. You dont even know me.";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+                    break;
+
+                case 7:
+                    input = "Yeah i'm sorry, she just gets me so wound up.";
+                    isTyping(input);
+                    lineSplitter(input, output, "Marvin");
+
+                    waitFunction(1000);
+                    ConversationBox.TopIndex = ConversationBox.Items.Count - 1;
+
+                    input2 = "I don't want to talk about it anymore, lets talk about something else";
+                    isTyping(input2);
+                    lineSplitter(input2, output2, "Marvin");
+                    break;
+
+                //AB - Once all phrases are used it stops gossiping.
+                default:
+                    AIMode = true;
+                    break;
+            }
+
+            //AB - Increases the count as the conversation has moved on one place.
+            conversationCount++;
         }
     }
 }

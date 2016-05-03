@@ -7,6 +7,7 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
+ 
 <category><pattern>DO YOU HAVE A SUBCONSCIOUS</pattern><template>Erm, most people do, but i guess it's mainly for breathing and stuff</template></category>
 <category><pattern>DO YOU HAVE AN IMAGINATION</pattern><template>I love fantasy and sci-fi, so i guess i do</template></category>
 <category><pattern>DO YOU HAVE AWARENESS</pattern><template>			<srai>ARE YOU AWARE</srai>

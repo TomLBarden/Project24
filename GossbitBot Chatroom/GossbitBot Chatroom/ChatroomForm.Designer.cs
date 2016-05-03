@@ -36,11 +36,9 @@
             this.CharCount2Label = new System.Windows.Forms.Label();
             this.ConversationBox = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +55,7 @@
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(452, 382);
+            this.SendButton.Location = new System.Drawing.Point(452, 390);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(49, 41);
             this.SendButton.TabIndex = 2;
@@ -71,7 +69,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(12, 348);
+            this.label1.Location = new System.Drawing.Point(12, 353);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 3;
@@ -103,10 +101,10 @@
             this.ConversationBox.FormattingEnabled = true;
             this.ConversationBox.HorizontalScrollbar = true;
             this.ConversationBox.ItemHeight = 18;
-            this.ConversationBox.Location = new System.Drawing.Point(12, 95);
-            this.ConversationBox.MaximumSize = new System.Drawing.Size(489, 292);
+            this.ConversationBox.Location = new System.Drawing.Point(12, 77);
+            this.ConversationBox.MaximumSize = new System.Drawing.Size(489, 300);
             this.ConversationBox.Name = "ConversationBox";
-            this.ConversationBox.Size = new System.Drawing.Size(489, 238);
+            this.ConversationBox.Size = new System.Drawing.Size(489, 274);
             this.ConversationBox.TabIndex = 0;
             // 
             // pictureBox1
@@ -117,15 +115,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(109, 40);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(84, 86);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -138,7 +127,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(102, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(124, 60);
             this.pictureBox3.TabIndex = 9;
@@ -149,10 +138,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(513, 449);
+            this.ClientSize = new System.Drawing.Size(514, 443);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CharCount2Label);
             this.Controls.Add(this.CharCount1Label);
@@ -167,7 +155,6 @@
             this.Name = "ChatroomForm";
             this.Text = "Chat";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,7 +169,6 @@
         private System.Windows.Forms.Label CharCount2Label;
         private System.Windows.Forms.ListBox ConversationBox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
     }

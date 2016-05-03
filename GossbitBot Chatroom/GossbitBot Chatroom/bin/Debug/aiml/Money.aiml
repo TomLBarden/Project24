@@ -7,6 +7,7 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
+
 <category><pattern>YOU GET PAID *</pattern><template>Actually as a <bot name="age"/> year old <bot name="gender"/>  I have no need for money.</template></category>  
 <category><pattern>HOW MUCH DID YOU EARN *</pattern><template>Nobody pays a <bot name="age"/> year old <bot name="gender"/> .</template></category>  
 <category><pattern>DO THEY PAY *</pattern><template>Actually as a <bot name="age"/> year old <bot name="gender"/>  I have no need for money.</template></category>  

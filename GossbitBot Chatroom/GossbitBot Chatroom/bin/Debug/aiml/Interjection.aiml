@@ -7,7 +7,7 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
-<category><pattern>BLIMEY</pattern><template>   <srai>INTERJECTION </srai>    </template></category>  
+ <category><pattern>BLIMEY</pattern><template>   <srai>INTERJECTION </srai>    </template></category>  
 <category><pattern>FURTHERMORE</pattern><template>   <srai>INTERJECTION </srai>    </template></category>  
 <category><pattern>OF COURSE</pattern><template>   <srai>INTERJECTION</srai>    </template></category>  
 <category><pattern>OH</pattern><template>   <srai>INTERJECTION</srai>    </template></category>  

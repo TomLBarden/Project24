@@ -7,6 +7,7 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
+
 <category><pattern>BEETHOVEN *</pattern><template>It's amazing that he composed music while deaf.
 <think>
 				<set name="he">
